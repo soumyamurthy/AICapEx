@@ -58,7 +58,7 @@ if st.sidebar.button("Run Estimate"):
     show_cols = ["project_id","project_name","region","capacity","execution_year","total_cost_usd"]
     df_show = similar_df[show_cols].copy()
     df_show["total_cost_usd"] = df_show["total_cost_usd"].apply(fmt_millions)
-    st.dataframe(df_show, use_container_width=True)
+    st.dataframe(df_show, width="stretch")
 
     base_row = similar_df.iloc[0].to_dict()
 
@@ -115,7 +115,7 @@ if st.sidebar.button("Run Estimate"):
     )
     bar_fig.update_traces(texttemplate="%{text:,.2f}", textposition="outside")
     bar_fig.update_layout(yaxis_title="USD (Millions)", xaxis_title=None, showlegend=False, margin=dict(t=40))
-    st.plotly_chart(bar_fig, use_container_width=True)
+    st.plotly_chart(bar_fig, width="stretch")
 
     # ---------- DONUT CHART ----------
     st.subheader("🍩 Cost Composition Share")
@@ -126,7 +126,7 @@ if st.sidebar.button("Run Estimate"):
         hole=0.4,
     )
     pie_fig.update_traces(textposition="inside", textinfo="percent+label")
-    st.plotly_chart(pie_fig, use_container_width=True)
+    st.plotly_chart(pie_fig, width="stretch")
 
     # ---------- OPTIONAL: MEDIAN COMPARATOR (core WBS only) ----------
     if compare_toggle:
@@ -153,7 +153,7 @@ if st.sidebar.button("Run Estimate"):
         long_df = comp_df.melt(id_vars="Category", var_name="Series", value_name="USD (Millions)")
         cmp_fig = px.bar(long_df, x="Category", y="USD (Millions)", color="Series", barmode="group")
         cmp_fig.update_layout(yaxis_title="USD (Millions)", xaxis_title=None, margin=dict(t=40))
-        st.plotly_chart(cmp_fig, use_container_width=True)
+        st.plotly_chart(cmp_fig, width="stretch")
 
     # ---------- REVIEW ----------
     reviewer_out = review(similar_df.to_dict(orient="records"), scaled, scaling_factors)
