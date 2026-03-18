@@ -21,10 +21,29 @@ def _load_local_streamlit_secrets() -> dict:
         return {}
 
 
-_LOCAL_SECRETS = _load_local_streamlit_secrets()
+def _load_streamlit_runtime_secrets() -> dict:
+    try:
+        import streamlit as st  # Imported lazily to avoid hard dependency in non-UI contexts.
 
-OPENAI_MODEL = os.getenv("OPENAI_MODEL") or _LOCAL_SECRETS.get("OPENAI_MODEL", "gpt-5")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY") or _LOCAL_SECRETS.get("OPENAI_API_KEY")
+        data = dict(st.secrets)
+        return data if isinstance(data, dict) else {}
+    except Exception:
+        return {}
+
+
+_LOCAL_SECRETS = _load_local_streamlit_secrets()
+_RUNTIME_SECRETS = _load_streamlit_runtime_secrets()
+
+OPENAI_MODEL = (
+    os.getenv("OPENAI_MODEL")
+    or _RUNTIME_SECRETS.get("OPENAI_MODEL")
+    or _LOCAL_SECRETS.get("OPENAI_MODEL", "gpt-5")
+)
+OPENAI_API_KEY = (
+    os.getenv("OPENAI_API_KEY")
+    or _RUNTIME_SECRETS.get("OPENAI_API_KEY")
+    or _LOCAL_SECRETS.get("OPENAI_API_KEY")
+)
 
 
 # Regional cost/productivity indices (baseline NA=1.00)
