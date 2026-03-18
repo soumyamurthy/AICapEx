@@ -343,6 +343,34 @@ def executive_summary_snapshot(request: dict, scaled: dict, reviewer_out: dict, 
     st.markdown("</div>", unsafe_allow_html=True)
 
 
+def scope_defaults(scope_template: str) -> dict:
+    presets = {
+        "Balanced Baseline": {"complexity": 1.05, "engineering_pct": 0.08, "contingency_pct": 0.10},
+        "Greenfield": {"complexity": 1.00, "engineering_pct": 0.08, "contingency_pct": 0.09},
+        "Brownfield Tie-in": {"complexity": 1.10, "engineering_pct": 0.09, "contingency_pct": 0.12},
+        "GMP Retrofit": {"complexity": 1.18, "engineering_pct": 0.11, "contingency_pct": 0.14},
+    }
+    return presets.get(scope_template, presets["Balanced Baseline"])
+
+
+def complexity_by_level(level: str) -> float:
+    return {"Low": 1.00, "Normal": 1.08, "High": 1.16}.get(level, 1.08)
+
+
+def estimate_ranges(total_cost: float, similar_df: pd.DataFrame, contingency_pct: float) -> dict:
+    hist = similar_df["total_cost_usd"].astype(float)
+    med = float(np.median(hist)) if len(hist) else max(1.0, total_cost)
+    std = float(np.std(hist)) if len(hist) else 0.0
+    cv = std / med if med else 0.0
+    uncertainty = float(np.clip(0.10 + cv * 0.35 + contingency_pct * 0.35, 0.08, 0.45))
+    return {
+        "p50": round(total_cost, 2),
+        "p80": round(total_cost * (1.0 + 0.45 * uncertainty), 2),
+        "p90": round(total_cost * (1.0 + 0.85 * uncertainty), 2),
+        "uncertainty": round(uncertainty, 4),
+    }
+
+
 def build_plot_theme(mode: str) -> dict:
     if mode == "Dark":
         return {
@@ -401,7 +429,64 @@ cap_min, cap_max, cap_default, cap_step = capacity_settings_for_type(df, project
 capacity = st.sidebar.slider("Capacity / Throughput", cap_min, cap_max, cap_default, step=cap_step)
 execution_year_default = min(max(2022, year_min), year_max)
 execution_year = st.sidebar.slider("Execution Year", year_min, year_max, execution_year_default)
+
+st.sidebar.markdown("#### Scope & Assumptions")
+scope_template = st.sidebar.selectbox(
+    "Scope Template",
+    ["Balanced Baseline", "Greenfield", "Brownfield Tie-in", "GMP Retrofit"],
+    index=0,
+)
+scope_seed = scope_defaults(scope_template)
+
+complexity_level = st.sidebar.selectbox("Complexity Level", ["Low", "Normal", "High"], index=1)
+manual_complexity = st.sidebar.toggle("Override Complexity Factor", value=False)
+complexity_override = st.sidebar.slider("Complexity Factor", 0.95, 1.25, float(scope_seed["complexity"]), 0.01)
+complexity_target = complexity_override if manual_complexity else complexity_by_level(complexity_level)
+
+inflation_mode = st.sidebar.radio("Inflation Mode", ["Auto (from years)", "Manual (%)"], horizontal=False)
+manual_inflation_pct = st.sidebar.slider("Manual Inflation (%)", -5.0, 12.0, 3.0, 0.1)
+
+engineering_pct = st.sidebar.slider(
+    "Engineering (%)",
+    5.0,
+    15.0,
+    float(scope_seed["engineering_pct"]) * 100.0,
+    0.5,
+)
+contingency_pct = st.sidebar.slider(
+    "Contingency (%)",
+    5.0,
+    25.0,
+    float(scope_seed["contingency_pct"]) * 100.0,
+    0.5,
+)
+
+st.sidebar.markdown("#### Comparable Selection")
+country_mode = st.sidebar.radio(
+    "Country Strictness",
+    ["Country-first with fallback", "Strict country only"],
+    index=0,
+)
+top_k = st.sidebar.slider("Comparable Count (top_k)", 3, 10, 5, 1)
+recency_weight_pct = st.sidebar.slider("Recency Weight (%)", 0, 100, 35, 5)
 compare_toggle = st.sidebar.toggle("Benchmark vs. median similar projects", value=True)
+
+st.sidebar.markdown("#### Quality Threshold")
+confidence_threshold = st.sidebar.slider("Minimum Comparable Quality Score", 40, 95, 60, 1)
+threshold_action = st.sidebar.radio("When below threshold", ["Warn only", "Block estimate"], index=0)
+
+st.sidebar.markdown("#### Assumptions Snapshot")
+assumption_lines = [
+    f"- Scope: `{scope_template}`",
+    f"- Complexity factor target: `{complexity_target:.2f}`",
+    f"- Inflation: `{'Auto' if inflation_mode.startswith('Auto') else f'{manual_inflation_pct:.1f}% manual'}`",
+    f"- Engineering / Contingency: `{engineering_pct:.1f}% / {contingency_pct:.1f}%`",
+    f"- Retrieval: `{'Strict country' if country_mode.startswith('Strict') else 'Country-first fallback'}`, top_k `{top_k}`",
+    f"- Recency weight: `{recency_weight_pct}%`",
+    f"- Quality threshold: `{confidence_threshold}` ({threshold_action})",
+]
+st.sidebar.caption("\n".join(assumption_lines))
+
 run_estimate = st.sidebar.button("Run Estimate", type="primary", use_container_width=True)
 
 
@@ -431,10 +516,24 @@ if run_estimate:
     }
 
     retriever = Retriever(DATA_PATH, REGIONAL_INDEX)
-    similar_df = retriever.find_similar(request, top_k=5)
+    similar_df, retrieval_meta = retriever.find_similar(
+        request,
+        top_k=top_k,
+        strict_country=country_mode.startswith("Strict"),
+        recency_weight=recency_weight_pct / 100.0,
+        return_meta=True,
+    )
 
     if similar_df.empty:
         st.error("No comparable projects were found for this request. Try broader inputs.")
+        st.stop()
+
+    quality_score = float(retrieval_meta.get("comparable_quality", 0.0))
+    if quality_score < float(confidence_threshold) and threshold_action.startswith("Block"):
+        st.error(
+            f"Comparable quality score is {quality_score:.1f}, below threshold {confidence_threshold}. "
+            "Relax filters or lower threshold."
+        )
         st.stop()
 
     base_row = similar_df.iloc[0].to_dict()
@@ -454,10 +553,34 @@ if run_estimate:
     reasoning = estimate_json.get("reasoning", [])
     estimate_mode = estimate_json.get("meta", {}).get("mode", "ai")
 
+    # User assumption overrides for practical planning workflows.
+    scaling_factors["complexity_modifier"] = round(float(complexity_target), 4)
+    soft_costs["engineering_pct"] = round(float(engineering_pct) / 100.0, 4)
+    soft_costs["contingency_pct"] = round(float(contingency_pct) / 100.0, 4)
+    if inflation_mode.startswith("Manual"):
+        year_delta = int(execution_year) - int(base_row.get("execution_year", execution_year))
+        scaling_factors["inflation_factor"] = round((1.0 + float(manual_inflation_pct) / 100.0) ** year_delta, 4)
+        reasoning = list(reasoning) + [
+            f"Manual inflation override applied at {manual_inflation_pct:.1f}% over {year_delta} years."
+        ]
+    else:
+        reasoning = list(reasoning) + ["Inflation factor derived automatically from execution-year tables."]
+
     scaled = apply_cost_scaling(base_row, scaling_factors, soft_costs)
     wbs = scaled["scaled_wbs_costs"]
+    ranges = estimate_ranges(scaled["total_estimated_cost"], similar_df, soft_costs["contingency_pct"])
 
     reviewer_out = review(similar_df.to_dict(orient="records"), scaled, scaling_factors)
+    if quality_score < float(confidence_threshold):
+        reviewer_out["flags"] = reviewer_out.get("flags", []) + [
+            f"Comparable quality {quality_score:.1f} is below threshold {confidence_threshold}."
+        ]
+    if reviewer_out.get("flags"):
+        reviewer_out["confidence"] = "Medium" if len(reviewer_out["flags"]) == 1 else "Low"
+    reviewer_out["notes"] = reviewer_out.get("notes", []) + [
+        f"Retrieval scope: {retrieval_meta.get('candidate_scope', 'unknown')} from pool size {retrieval_meta.get('candidate_count', 0)}.",
+        f"Comparable quality score: {quality_score:.1f}/100.",
+    ]
     report_md = write_summary(request, base_row, scaling_factors, scaled, reviewer_out, reasoning)
 
     st.session_state["estimate_payload"] = {
@@ -470,6 +593,24 @@ if run_estimate:
         "project_type": project_type,
         "country": country,
         "plot_theme": plot_theme,
+        "retrieval_meta": retrieval_meta,
+        "quality_score": quality_score,
+        "ranges": ranges,
+        "controls": {
+            "scope_template": scope_template,
+            "complexity_level": complexity_level,
+            "manual_complexity": manual_complexity,
+            "complexity_override": complexity_override,
+            "inflation_mode": inflation_mode,
+            "manual_inflation_pct": manual_inflation_pct,
+            "engineering_pct": engineering_pct,
+            "contingency_pct": contingency_pct,
+            "country_mode": country_mode,
+            "top_k": top_k,
+            "recency_weight_pct": recency_weight_pct,
+            "confidence_threshold": confidence_threshold,
+            "threshold_action": threshold_action,
+        },
     }
 
 payload = st.session_state.get("estimate_payload")
@@ -478,11 +619,16 @@ if payload:
     request = payload["request"]
     similar_df = payload["similar_df"]
     estimate_json = payload["estimate_json"]
+    scaling_factors = estimate_json.get("scaling_factors", {})
     scaled = payload["scaled"]
     reviewer_out = payload["reviewer_out"]
     report_md = payload["report_md"]
     project_type = payload["project_type"]
     country = payload["country"]
+    retrieval_meta = payload.get("retrieval_meta", {})
+    quality_score = float(payload.get("quality_score", 0.0))
+    ranges = payload.get("ranges", {})
+    controls = payload.get("controls", {})
     wbs = scaled["scaled_wbs_costs"]
     estimate_mode = estimate_json.get("meta", {}).get("mode", "ai")
 
@@ -500,9 +646,12 @@ if payload:
     with c2:
         kpi_card("Confidence", str(confidence).title(), f"Based on {similar_count} comparable projects")
     with c3:
-        kpi_card("Engineering", f"{engineering_share:,.1f}%", "Share of total estimate")
+        p50_val = ranges.get("p50", total_cost)
+        p80_val = ranges.get("p80", total_cost)
+        p90_val = ranges.get("p90", total_cost)
+        kpi_card("P50 / P80 / P90", f"{fmt_millions(p50_val)} / {fmt_millions(p80_val)} / {fmt_millions(p90_val)}", "Scenario range")
     with c4:
-        kpi_card("Contingency", f"{contingency_share:,.1f}%", "Risk reserve allocation")
+        kpi_card("Comparable Quality", f"{quality_score:,.1f}/100", f"Scope: {retrieval_meta.get('candidate_scope', 'n/a')}")
 
     if estimate_mode != "ai":
         st.warning("AI estimator unavailable for this run. Deterministic fallback heuristics were used.")
@@ -521,9 +670,11 @@ if payload:
             "country",
             "capacity",
             "execution_year",
+            "match_score",
             "total_cost_usd",
         ]
         df_show = similar_df[show_cols].copy()
+        df_show["match_score"] = df_show["match_score"].map(lambda x: f"{float(x):.1f}")
         df_show["total_cost_usd"] = df_show["total_cost_usd"].apply(fmt_millions)
         st.dataframe(df_show, width="stretch", hide_index=True)
 
@@ -654,6 +805,26 @@ if payload:
         st.plotly_chart(cmp_fig, width="stretch")
 
     # ---------- REVIEW + SUMMARY ----------
+    st.markdown('<div class="panel-title section-space">Assumptions & Data Quality</div>', unsafe_allow_html=True)
+    a1, a2 = st.columns([1.0, 1.0], gap="large")
+    with a1:
+        st.write("**Applied Assumptions**")
+        st.write(f"- Scope template: {controls.get('scope_template', '-')}")
+        st.write(f"- Complexity level/factor: {controls.get('complexity_level', '-')} / {scaling_factors['complexity_modifier']:.2f}")
+        st.write(f"- Inflation mode: {controls.get('inflation_mode', '-')}")
+        st.write(
+            f"- Engineering / Contingency: {engineering_share:.1f}% / {contingency_share:.1f}%"
+        )
+    with a2:
+        st.write("**Comparable Quality Checks**")
+        st.write(f"- Candidate scope used: {retrieval_meta.get('candidate_scope', 'n/a')}")
+        st.write(f"- Candidate pool size: {retrieval_meta.get('candidate_count', 0)}")
+        st.write(f"- Quality score: {quality_score:.1f} (threshold {controls.get('confidence_threshold', '-')})")
+        if quality_score < float(controls.get("confidence_threshold", 0)):
+            st.warning("Comparable quality is below your configured threshold.")
+        else:
+            st.success("Comparable quality is above your configured threshold.")
+
     st.markdown('<div class="panel-title section-space">Review & Confidence</div>', unsafe_allow_html=True)
     col_a, col_b = st.columns([1.0, 1.0], gap="large")
 
