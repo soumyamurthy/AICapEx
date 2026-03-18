@@ -2,13 +2,32 @@ from typing import Dict, Any
 from config import INFLATION_BY_YEAR, REGIONAL_INDEX
 
 def infer_inflation_factor(execution_year: int) -> float:
-    # If year is in table, use it; else assume 3% per missing year relative to 2023
+    # If year is in table, use it directly.
     if execution_year in INFLATION_BY_YEAR:
         return INFLATION_BY_YEAR[execution_year]
-    # simple fallback
-    base_year = 2023
-    years = max(0, base_year - int(execution_year))
-    return (1.03) ** years
+
+    # Extrapolate from nearest known year at 3%/year.
+    known_years = sorted(INFLATION_BY_YEAR.keys())
+    if not known_years:
+        return 1.0
+
+    year = int(execution_year)
+    min_year = known_years[0]
+    max_year = known_years[-1]
+    min_factor = float(INFLATION_BY_YEAR[min_year])
+    max_factor = float(INFLATION_BY_YEAR[max_year])
+
+    if year < min_year:
+        return min_factor * ((1.03) ** (min_year - year))
+
+    if year > max_year:
+        return max_factor / ((1.03) ** (year - max_year))
+
+    # Missing year inside known range: use nearest lower known year and project.
+    lower_years = [y for y in known_years if y < year]
+    anchor = max(lower_years) if lower_years else min_year
+    anchor_factor = float(INFLATION_BY_YEAR[anchor])
+    return anchor_factor / ((1.03) ** (year - anchor))
 
 def apply_cost_scaling(base_project: dict,
                        scaling_factors: Dict[str, float],

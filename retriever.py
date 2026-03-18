@@ -14,6 +14,9 @@ class Retriever:
     def __init__(self, csv_path: str, regional_index: dict):
         self.df = pd.read_csv(csv_path)
         self.df = self.df.dropna(subset=["project_type","region","capacity","execution_year"])
+        if "country" not in self.df.columns:
+            self.df["country"] = "Unknown"
+        self.df["country"] = self.df["country"].fillna("Unknown")
         self.regional_index = regional_index
 
         self.feature_df = self.df.copy()
@@ -24,11 +27,23 @@ class Retriever:
     def find_similar(self, request: dict, top_k: int = 5):
         # constrain to same project_type first (most important)
         same_type = self.feature_df[self.feature_df["project_type"] == request["project_type"]]
-        if same_type.empty:
+        same_region = same_type[same_type["region"] == request["region"]] if not same_type.empty else same_type
+        req_country = request.get("country")
+        same_country = (
+            same_region[same_region["country"] == req_country]
+            if (not same_region.empty and req_country is not None)
+            else same_region
+        )
+
+        if len(same_country) >= top_k:
+            candidate_df = same_country
+        elif len(same_region) >= max(2, top_k // 2):
+            candidate_df = same_region
+        elif not same_type.empty:
+            candidate_df = same_type
+        else:
             # fall back to whole dataset if no same-type
             candidate_df = self.feature_df
-        else:
-            candidate_df = same_type
 
         X = candidate_df[["capacity", "region_idx", "execution_year"]].to_numpy(dtype=float)
         X_scaled = self.scaler.transform(X)
@@ -46,9 +61,8 @@ class Retriever:
         sel = candidate_df.iloc[idxs[0]].copy()
         # All needed columns are already present, just return selection
         cols_keep = [
-            "project_id","project_name","project_type","region","site","capacity",
+            "project_id","project_name","project_type","region","country","site","capacity",
             "total_cost_usd","civil_cost","mechanical_cost","electrical_cost","automation_cost",
             "contingency_pct","execution_year"
         ]
         return sel[cols_keep].reset_index(drop=True)
-

@@ -9,12 +9,22 @@ def write_summary(request: dict,
     lines = []
     lines.append("# AI-Generated CapEx Estimate\n")
     lines.append("## Request\n")
-    lines.append(tabulate([[request["project_type"], request["region"], request["capacity"], request["execution_year"]]],
-                          headers=["Project Type","Region","Capacity","Year"], tablefmt="github"))
+    lines.append(tabulate([[
+        request["project_type"],
+        request["region"],
+        request.get("country", "N/A"),
+        request["capacity"],
+        request["execution_year"]
+    ]], headers=["Project Type","Region","Country","Capacity","Year"], tablefmt="github"))
     lines.append("\n## Selected Base Comparable")
-    lines.append(tabulate([[base_project["project_id"], base_project["project_name"], base_project["region"],
-                            base_project["capacity"], base_project["execution_year"]]],
-                          headers=["ID","Name","Region","Capacity","Year"], tablefmt="github"))
+    lines.append(tabulate([[
+        base_project["project_id"],
+        base_project["project_name"],
+        base_project["region"],
+        base_project.get("country", "N/A"),
+        base_project["capacity"],
+        base_project["execution_year"]
+    ]], headers=["ID","Name","Region","Country","Capacity","Year"], tablefmt="github"))
     lines.append("\n## Scaling Factors (LLM-derived)")
     sf_tab = [[scaling_factors["capacity_scale_factor"],
                scaling_factors["regional_index_factor"],
