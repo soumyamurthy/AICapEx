@@ -445,3 +445,407 @@ P-2029-442,Utilities Upgrade Project 442,Quality Lab Upgrade,Middle East & Afric
 P-2029-443,Filling Line Project 443,Quality Lab Upgrade,Middle East & Africa,Cairo Plant,382,46142849.91,5652253.62,20031335.68,8017552.83,2757601.41,0.18,2029,South Africa
 P-2029-444,Filling Line Project 444,Quality Lab Upgrade,Middle East & Africa,Riyadh Plant,410,54758062.66,8100081.88,20810109.38,11753711.76,6432842.68,0.093,2029,South Africa
 P-2029-445,Processing System Project 445,Quality Lab Upgrade,Middle East & Africa,Cairo Plant,290,40286914.7,5599941.07,14976370.22,7613309.81,3016858.5,0.196,2029,Egypt
+P-2030-446,Plant Expansion Project 446,Processing System,Asia Pacific,Sydney Plant,248,104100083.32,14277993.33,39421418.18,17972711.61,11697493.21,0.168,2030,Australia
+P-2030-447,Plant Expansion Project 447,Processing System,Asia Pacific,Singapore Plant,232,64216497.3,9454627.49,26926212.38,13286448.33,5821246.59,0.083,2030,Australia
+P-2030-448,Mixing & Blending Project 448,Processing System,Asia Pacific,Singapore Plant,380,78875576.12,10708010.31,35575371.34,15706265.11,6955700.96,0.076,2030,Australia
+P-2030-449,Packaging Line Project 449,Quality Lab Upgrade,Asia Pacific,Sydney Plant,129,176311125.98,31622250.21,82132584.48,19004543.16,14020100.3,0.12,2030,Australia
+P-2030-450,Quality Lab Upgrade Project 450,Quality Lab Upgrade,Asia Pacific,Guangzhou Plant,709,11693874.88,747878.76,5626908.87,2150338.04,1109504.31,0.139,2030,Australia
+P-2030-451,Quality Lab Upgrade Project 451,Quality Lab Upgrade,Asia Pacific,Singapore Plant,110,112935254.96,20006255.5,52130518.1,11646216.42,10134556.59,0.112,2030,Australia
+P-2030-452,Quality Lab Upgrade Project 452,Quality Lab Upgrade,Asia Pacific,Sydney Plant,127,120842957.2,22644509.84,54658399.58,13733689.41,9884644.96,0.11,2030,Australia
+P-2030-453,Packaging Line Project 453,Filling Line,Latin America,Monterrey Plant,357,102886413.85,13900500.31,52839082.08,16245628.2,6939110.16,0.069,2030,Brazil
+P-2030-454,Plant Expansion Project 454,Filling Line,Latin America,Monterrey Plant,213,46265863.18,6907380.73,17296887.44,9259975.76,3289175.49,0.178,2030,Brazil
+P-2030-455,Filling Line Project 455,Filling Line,Latin America,Sao Paulo Plant,491,85804646.83,18449941.06,31943002.05,15333521.98,7579352.18,0.111,2030,Brazil
+P-2030-456,Packaging Line Project 456,Filling Line,Latin America,Bogota Plant,397,170576257.96,38291271.85,70346889.26,22628373.46,12337744.35,0.12,2030,Brazil
+P-2030-457,Processing System Project 457,Mixing & Blending,Latin America,Sao Paulo Plant,556,99260782.6,13129546.41,51504623.96,15540299.36,6388011.47,0.052,2030,Brazil
+P-2030-458,Packaging Line Project 458,Mixing & Blending,Latin America,Sao Paulo Plant,762,122802280.8,16422270.11,67838834.22,18926594.21,6439754.03,0.05,2030,Brazil
+P-2030-459,Processing System Project 459,Packaging Line,Latin America,Monterrey Plant,425,75462040.91,11119188.09,30706906.5,14241872.55,7216262.7,0.096,2030,Brazil
+P-2030-460,Packaging Line Project 460,Packaging Line,Latin America,Sao Paulo Plant,863,84556727.75,11498469.85,36531695.1,14531608.24,9295550.46,0.103,2030,Brazil
+P-2030-461,Quality Lab Upgrade Project 461,Packaging Line,Latin America,Bogota Plant,488,127185172.51,21479377.64,55010040.59,23498829.16,8453556.63,0.113,2030,Brazil
+P-2030-462,Packaging Line Project 462,Packaging Line,Latin America,Lima Plant,585,61556746.84,11581976.75,29061529.2,10672640.11,3823316.84,0.053,2030,Brazil
+P-2030-463,Plant Expansion Project 463,Plant Expansion,Latin America,Monterrey Plant,302,88861813.59,15093526.03,43029660.74,16225877.96,4626030.2,0.075,2030,Brazil
+P-2030-464,Plant Expansion Project 464,Plant Expansion,Latin America,Bogota Plant,1238,133047230.08,17017893.58,59943045.32,18592755.5,13480241.98,0.157,2030,Brazil
+P-2030-465,Filling Line Project 465,Plant Expansion,Latin America,Lima Plant,432,38914542.3,5665089.29,15974388.01,8227187.1,2284303.84,0.151,2030,Brazil
+P-2030-466,Filling Line Project 466,Processing System,Latin America,Lima Plant,624,39890584.12,6041542.14,18180233.47,7270609.67,2170616.03,0.081,2030,Brazil
+P-2030-467,Filling Line Project 467,Processing System,Latin America,Monterrey Plant,441,83783419.88,13879188.98,38106521.68,17150870.93,5475045.29,0.05,2030,Brazil
+P-2030-468,Processing System Project 468,Processing System,Latin America,Monterrey Plant,537,63396324.44,8707178.64,28271743.1,8477898.69,7204005.34,0.129,2030,Brazil
+P-2030-469,Plant Expansion Project 469,Processing System,Latin America,Monterrey Plant,100,114324516.22,23509776.62,48238050.95,13313708.6,8743555.45,0.113,2030,Brazil
+P-2030-470,Quality Lab Upgrade Project 470,Quality Lab Upgrade,Latin America,Lima Plant,548,50583781.14,6806367.08,25258116.69,8338972.78,2883349.62,0.061,2030,Brazil
+P-2030-471,Quality Lab Upgrade Project 471,Quality Lab Upgrade,Latin America,Sao Paulo Plant,584,13407199.54,1635301.54,6706346.01,1819911.45,885784.03,0.129,2030,Brazil
+P-2030-472,Quality Lab Upgrade Project 472,Quality Lab Upgrade,Latin America,Lima Plant,304,84221278.33,11329629.83,33697153.86,17408774.11,8418137.51,0.103,2030,Brazil
+P-2030-473,Quality Lab Upgrade Project 473,Quality Lab Upgrade,Latin America,Lima Plant,855,170130863.44,27996122.67,74167535.65,30654096.63,15025928.7,0.056,2030,Brazil
+P-2030-474,Utilities Upgrade Project 474,Utilities Upgrade,Latin America,Monterrey Plant,820,83618724.68,7741646.13,39842552.56,11579886.54,6562199.98,0.157,2030,Brazil
+P-2030-475,Plant Expansion Project 475,Utilities Upgrade,Latin America,Lima Plant,511,98480109.02,12988181.32,39557334.8,16053848.35,12856007.33,0.125,2030,Brazil
+P-2030-476,Utilities Upgrade Project 476,Utilities Upgrade,Latin America,Bogota Plant,254,51268022.94,7005206.85,22529265.78,9562527.26,4995584.2,0.085,2030,Brazil
+P-2030-477,Utilities Upgrade Project 477,Utilities Upgrade,Latin America,Sao Paulo Plant,654,24538822.44,2806459.14,12120281.44,3839982.48,1906805.9,0.111,2030,Brazil
+P-2030-478,Warehouse Automation Project 478,Warehouse Automation,Latin America,Lima Plant,188,135766163.72,14616678.21,64075531.05,20719263.52,10089261.88,0.134,2030,Brazil
+P-2030-479,Warehouse Automation Project 479,Warehouse Automation,Latin America,Monterrey Plant,473,60162350.28,6368824.43,29676898.76,11557069.81,5074564.87,0.057,2030,Brazil
+P-2030-480,Quality Lab Upgrade Project 480,Warehouse Automation,Latin America,Bogota Plant,772,63487389.24,9277763.53,25176936.31,9426850.83,5677677.54,0.2,2030,Brazil
+P-2030-481,Processing System Project 481,Quality Lab Upgrade,North America,Ontario Plant,694,22271785.79,1504382.17,9020705.68,4612853.62,2078155.16,0.185,2030,Canada
+P-2030-482,Quality Lab Upgrade Project 482,Quality Lab Upgrade,North America,Ohio Plant,666,15848130.27,1025723.55,7152490.42,2840197.48,1330657.19,0.2,2030,Canada
+P-2030-483,Quality Lab Upgrade Project 483,Quality Lab Upgrade,North America,Ohio Plant,344,51499400.31,8563734.98,22358371.02,7019319.5,4542669.68,0.136,2030,Canada
+P-2030-484,Packaging Line Project 484,Utilities Upgrade,North America,Ontario Plant,898,52249172.76,6586579.87,24719100.57,6407204.07,4856807.28,0.156,2030,Canada
+P-2030-485,Warehouse Automation Project 485,Utilities Upgrade,North America,Iowa Plant,682,39919194.23,4262937.39,18681695.55,6118852.78,3387406.69,0.137,2030,Canada
+P-2030-486,Filling Line Project 486,Filling Line,Latin America,Lima Plant,272,64636500.67,12354992.41,26674139.87,11596350.74,6908114.64,0.058,2030,Chile
+P-2030-487,Utilities Upgrade Project 487,Filling Line,Latin America,Lima Plant,631,99932388.74,16534320.98,39007257.63,18355814.3,10022172.38,0.113,2030,Chile
+P-2030-488,Filling Line Project 488,Filling Line,Latin America,Sao Paulo Plant,432,114503458.14,21857665.14,45970954.45,20378116.06,10079413.23,0.098,2030,Chile
+P-2030-489,Filling Line Project 489,Filling Line,Latin America,Monterrey Plant,527,126885624.72,17244485.23,65461929.64,22939562.18,8559903.92,0.053,2030,Chile
+P-2030-490,Mixing & Blending Project 490,Mixing & Blending,Latin America,Bogota Plant,243,22004483.17,3087088.53,7918880.17,5455141.12,1622951.0,0.149,2030,Chile
+P-2030-491,Mixing & Blending Project 491,Mixing & Blending,Latin America,Monterrey Plant,416,111899366.29,18034229.24,54744575.07,19164719.56,6239403.24,0.069,2030,Chile
+P-2030-492,Mixing & Blending Project 492,Mixing & Blending,Latin America,Monterrey Plant,582,121033491.23,17100497.58,67519114.71,17233460.74,7111454.77,0.05,2030,Chile
+P-2030-493,Filling Line Project 493,Packaging Line,Latin America,Lima Plant,789,62514929.72,7858160.1,28092050.2,13303412.77,4779586.73,0.053,2030,Chile
+P-2030-494,Utilities Upgrade Project 494,Packaging Line,Latin America,Lima Plant,822,57365277.72,7927660.87,23879825.69,11694441.88,5674511.7,0.092,2030,Chile
+P-2030-495,Packaging Line Project 495,Packaging Line,Latin America,Lima Plant,378,35611272.48,7085513.75,15793092.09,6471700.79,1789318.99,0.059,2030,Chile
+P-2030-496,Packaging Line Project 496,Packaging Line,Latin America,Bogota Plant,412,62975689.14,10965184.15,25745457.05,11084441.39,7245936.23,0.094,2030,Chile
+P-2030-497,Plant Expansion Project 497,Plant Expansion,Latin America,Monterrey Plant,597,49533093.4,7471154.07,23337685.0,8721899.3,2981386.13,0.066,2030,Chile
+P-2030-498,Plant Expansion Project 498,Plant Expansion,Latin America,Bogota Plant,319,111466622.18,11517497.96,44759136.79,20031810.41,12538295.87,0.16,2030,Chile
+P-2030-499,Filling Line Project 499,Plant Expansion,Latin America,Monterrey Plant,379,31256743.61,5032022.64,15496584.66,5430040.06,1498609.52,0.05,2030,Chile
+P-2030-500,Packaging Line Project 500,Processing System,Latin America,Lima Plant,100,85996468.87,15572075.45,40509656.16,9386550.1,6107309.01,0.105,2030,Chile
+P-2030-501,Processing System Project 501,Processing System,Latin America,Lima Plant,1185,40702343.79,5224872.37,16224526.51,7067598.9,3563120.24,0.177,2030,Chile
+P-2030-502,Processing System Project 502,Processing System,Latin America,Bogota Plant,452,40240536.08,6727804.93,19977663.24,7052362.96,2339652.98,0.05,2030,Chile
+P-2030-503,Quality Lab Upgrade Project 503,Processing System,Latin America,Monterrey Plant,626,44894681.87,5257917.88,22451526.89,5634707.35,4594234.31,0.13,2030,Chile
+P-2030-504,Quality Lab Upgrade Project 504,Quality Lab Upgrade,Latin America,Sao Paulo Plant,837,16293290.55,2143650.7,8099760.84,2052600.88,995294.74,0.145,2030,Chile
+P-2030-505,Quality Lab Upgrade Project 505,Quality Lab Upgrade,Latin America,Sao Paulo Plant,733,14546710.47,1842945.37,7598910.72,1767661.52,1024336.36,0.128,2030,Chile
+P-2030-506,Quality Lab Upgrade Project 506,Quality Lab Upgrade,Latin America,Lima Plant,623,14751401.76,1913928.07,7438087.81,1729635.62,912740.11,0.144,2030,Chile
+P-2030-507,Quality Lab Upgrade Project 507,Quality Lab Upgrade,Latin America,Lima Plant,685,139223274.28,21297843.38,66024356.83,24255678.81,11776812.85,0.055,2030,Chile
+P-2030-508,Processing System Project 508,Utilities Upgrade,Latin America,Bogota Plant,193,86157971.88,11963154.73,39124303.6,13827407.82,9369077.89,0.074,2030,Chile
+P-2030-509,Utilities Upgrade Project 509,Utilities Upgrade,Latin America,Sao Paulo Plant,237,54541996.95,8209192.61,21111092.84,11185174.61,4911918.27,0.122,2030,Chile
+P-2030-510,Processing System Project 510,Utilities Upgrade,Latin America,Lima Plant,245,59261233.78,7635981.17,26131714.43,10788265.86,5611916.71,0.096,2030,Chile
+P-2030-511,Filling Line Project 511,Utilities Upgrade,Latin America,Sao Paulo Plant,727,70961083.06,9660988.44,31814122.13,14140180.13,5903615.08,0.069,2030,Chile
+P-2030-512,Warehouse Automation Project 512,Warehouse Automation,Latin America,Bogota Plant,100,89496239.84,19236943.55,37667770.95,11513179.3,8817007.85,0.096,2030,Chile
+P-2030-513,Quality Lab Upgrade Project 513,Warehouse Automation,Latin America,Monterrey Plant,425,37781472.51,3836439.47,18883983.46,7372542.36,2886676.79,0.076,2030,Chile
+P-2030-514,Warehouse Automation Project 514,Warehouse Automation,Latin America,Monterrey Plant,644,78626814.43,7266154.75,43800703.24,13742351.35,5087187.55,0.061,2030,Chile
+P-2030-515,Filling Line Project 515,Warehouse Automation,Latin America,Sao Paulo Plant,763,81672801.71,8591085.36,44668497.35,12980149.45,5922875.78,0.05,2030,Chile
+P-2030-516,Filling Line Project 516,Filling Line,Asia Pacific,Guangzhou Plant,471,108637960.55,15583651.05,54909018.34,18053599.15,6459544.92,0.055,2030,China
+P-2030-517,Warehouse Automation Project 517,Filling Line,Asia Pacific,Bangkok Plant,128,96970865.6,18268697.25,44363269.38,14964381.77,6452561.59,0.104,2030,China
+P-2030-518,Filling Line Project 518,Filling Line,Asia Pacific,Sydney Plant,746,76256058.44,14114297.27,30766772.86,14768071.66,7932532.47,0.05,2030,China
+P-2030-519,Quality Lab Upgrade Project 519,Packaging Line,Asia Pacific,Singapore Plant,452,45169386.2,7018480.11,17986023.48,8126021.05,5756227.79,0.103,2030,China
+P-2030-520,Packaging Line Project 520,Packaging Line,Asia Pacific,Bangkok Plant,502,57321110.66,7438463.18,21383530.97,10801825.46,6766082.63,0.136,2030,China
+P-2030-521,Packaging Line Project 521,Packaging Line,Asia Pacific,Guangzhou Plant,567,155145016.02,26279606.75,67586039.75,28582257.68,13031664.67,0.055,2030,China
+P-2030-522,Quality Lab Upgrade Project 522,Quality Lab Upgrade,Asia Pacific,Singapore Plant,592,21510802.87,2712124.43,10528961.41,2444736.64,2041979.78,0.128,2030,China
+P-2030-523,Quality Lab Upgrade Project 523,Quality Lab Upgrade,Asia Pacific,Guangzhou Plant,398,28404147.69,3621369.5,13961602.07,5694547.58,1698047.3,0.05,2030,China
+P-2030-524,Quality Lab Upgrade Project 524,Quality Lab Upgrade,Asia Pacific,Bangkok Plant,108,118062414.45,19742593.77,59346129.65,12749406.33,9444136.77,0.099,2030,China
+P-2030-525,Quality Lab Upgrade Project 525,Quality Lab Upgrade,Asia Pacific,Sydney Plant,346,26250122.45,4338571.0,11327062.01,5737199.96,1665218.0,0.056,2030,China
+P-2030-526,Processing System Project 526,Utilities Upgrade,Asia Pacific,Singapore Plant,406,82876473.32,9723535.64,38332973.17,17389136.31,6978093.9,0.081,2030,China
+P-2030-527,Utilities Upgrade Project 527,Utilities Upgrade,Asia Pacific,Bangkok Plant,524,63660156.0,9353328.33,23699199.42,13034749.26,3939134.2,0.199,2030,China
+P-2030-528,Utilities Upgrade Project 528,Utilities Upgrade,Asia Pacific,Guangzhou Plant,339,64602634.71,7164925.95,29060730.62,12527750.72,5206483.33,0.099,2030,China
+P-2030-529,Packaging Line Project 529,Warehouse Automation,Asia Pacific,Singapore Plant,993,60698309.68,6091390.14,28250499.85,7861220.33,6022159.93,0.196,2030,China
+P-2030-530,Mixing & Blending Project 530,Warehouse Automation,Asia Pacific,Singapore Plant,1252,91293000.57,10180924.0,40086103.55,11496580.84,9846334.62,0.199,2030,China
+P-2030-531,Warehouse Automation Project 531,Warehouse Automation,Asia Pacific,Bangkok Plant,1038,184272635.22,21628741.39,85331935.31,23960637.87,19035396.51,0.123,2030,China
+P-2030-532,Packaging Line Project 532,Filling Line,Latin America,Sao Paulo Plant,523,114794072.62,17109223.72,58211006.05,18566825.86,8091618.71,0.054,2030,Colombia
+P-2030-533,Filling Line Project 533,Filling Line,Latin America,Monterrey Plant,316,84581178.98,12203720.1,41846058.92,12919957.6,5516320.23,0.05,2030,Colombia
+P-2030-534,Mixing & Blending Project 534,Filling Line,Latin America,Sao Paulo Plant,345,102420012.17,16035144.25,48284905.4,17622394.35,7761557.41,0.055,2030,Colombia
+P-2030-535,Packaging Line Project 535,Packaging Line,Latin America,Bogota Plant,551,55018209.85,10055538.88,24806046.27,10028291.54,3318773.27,0.05,2030,Colombia
+P-2030-536,Packaging Line Project 536,Packaging Line,Latin America,Sao Paulo Plant,371,148274417.78,26280597.7,66519165.97,26464885.52,9097878.16,0.088,2030,Colombia
+P-2030-537,Quality Lab Upgrade Project 537,Packaging Line,Latin America,Lima Plant,413,39772859.18,5747489.75,17038869.44,5310899.84,3805457.86,0.147,2030,Colombia
+P-2030-538,Quality Lab Upgrade Project 538,Packaging Line,Latin America,Bogota Plant,520,55130753.23,8889809.54,24965967.07,6831651.47,3981694.62,0.149,2030,Colombia
+P-2030-539,Packaging Line Project 539,Plant Expansion,Latin America,Bogota Plant,291,74132457.07,7644880.19,32133227.65,13801542.14,7282648.2,0.161,2030,Colombia
+P-2030-540,Plant Expansion Project 540,Plant Expansion,Latin America,Bogota Plant,593,42206288.19,6527174.37,19154741.6,8627400.7,2281989.92,0.072,2030,Colombia
+P-2030-541,Plant Expansion Project 541,Plant Expansion,Latin America,Lima Plant,628,52281192.26,8390891.65,26095318.05,8810558.46,2955434.26,0.05,2030,Colombia
+P-2030-542,Plant Expansion Project 542,Plant Expansion,Latin America,Sao Paulo Plant,244,104723380.27,17945183.88,48310010.15,14954155.44,5524147.43,0.115,2030,Colombia
+P-2030-543,Quality Lab Upgrade Project 543,Quality Lab Upgrade,Latin America,Sao Paulo Plant,411,154077455.53,21961671.48,60804866.9,26387357.7,17873356.9,0.124,2030,Colombia
+P-2030-544,Quality Lab Upgrade Project 544,Quality Lab Upgrade,Latin America,Lima Plant,257,48365917.16,7436689.92,18394447.36,10133175.17,5179219.12,0.087,2030,Colombia
+P-2030-545,Quality Lab Upgrade Project 545,Quality Lab Upgrade,Latin America,Sao Paulo Plant,825,98327214.7,12589922.43,41899728.6,18421236.84,6993522.51,0.174,2030,Colombia
+P-2030-546,Plant Expansion Project 546,Utilities Upgrade,Latin America,Monterrey Plant,976,171794084.41,17280009.07,81256880.53,28903179.43,12977819.99,0.137,2030,Colombia
+P-2030-547,Utilities Upgrade Project 547,Utilities Upgrade,Latin America,Lima Plant,246,103461826.8,13779122.34,44541593.82,17003630.64,8929071.43,0.119,2030,Colombia
+P-2030-548,Utilities Upgrade Project 548,Utilities Upgrade,Latin America,Sao Paulo Plant,470,73418812.39,11258445.5,28526648.65,13357547.1,8775005.52,0.123,2030,Colombia
+P-2030-549,Utilities Upgrade Project 549,Utilities Upgrade,Latin America,Bogota Plant,266,83881856.65,10871050.98,36670686.72,13317674.59,7869581.51,0.118,2030,Colombia
+P-2030-550,Warehouse Automation Project 550,Warehouse Automation,Latin America,Sao Paulo Plant,120,107549762.98,25419730.63,41043680.56,13775319.62,9008094.7,0.103,2030,Colombia
+P-2030-551,Packaging Line Project 551,Warehouse Automation,Latin America,Sao Paulo Plant,717,76940815.69,9841967.32,34244043.52,10937880.73,5851081.56,0.193,2030,Colombia
+P-2030-552,Warehouse Automation Project 552,Warehouse Automation,Latin America,Bogota Plant,688,92270030.44,7614000.96,46438107.05,17643525.79,5948464.59,0.093,2030,Colombia
+P-2030-553,Processing System Project 553,Warehouse Automation,Latin America,Bogota Plant,675,87653405.64,8004474.99,44732155.51,16981447.1,6693732.45,0.071,2030,Colombia
+P-2030-554,Mixing & Blending Project 554,Mixing & Blending,Middle East & Africa,Johannesburg Plant,589,31187515.37,4146859.7,15983843.99,5105225.66,1846426.72,0.05,2030,Egypt
+P-2030-555,Mixing & Blending Project 555,Mixing & Blending,Middle East & Africa,Riyadh Plant,568,40431564.17,6204505.82,18837328.24,6781256.23,2622496.17,0.059,2030,Egypt
+P-2030-556,Plant Expansion Project 556,Mixing & Blending,Middle East & Africa,Cairo Plant,532,41196085.06,7097227.85,20980952.21,6951841.07,2302665.87,0.05,2030,Egypt
+P-2030-557,Processing System Project 557,Mixing & Blending,Middle East & Africa,Cairo Plant,677,18127407.43,1347703.34,6989132.24,4551130.7,1554244.44,0.173,2030,Egypt
+P-2030-558,Packaging Line Project 558,Packaging Line,Middle East & Africa,Johannesburg Plant,881,97120752.51,15953830.55,38824197.44,19852859.69,10949973.59,0.05,2030,Egypt
+P-2030-559,Packaging Line Project 559,Packaging Line,Middle East & Africa,Dubai Plant,579,89318670.79,15407890.33,36201487.69,12120609.47,8868183.98,0.12,2030,Egypt
+P-2030-560,Packaging Line Project 560,Packaging Line,Middle East & Africa,Dubai Plant,633,22170848.64,2593463.9,11027483.55,4189313.84,1424207.97,0.075,2030,Egypt
+P-2030-561,Packaging Line Project 561,Packaging Line,Middle East & Africa,Johannesburg Plant,700,83758972.0,15653816.24,32349303.34,13189881.15,9374854.21,0.132,2030,Egypt
+P-2030-562,Plant Expansion Project 562,Plant Expansion,Middle East & Africa,Dubai Plant,857,128234001.25,23188246.43,45652019.79,21497900.13,16683988.88,0.112,2030,Egypt
+P-2030-563,Plant Expansion Project 563,Plant Expansion,Middle East & Africa,Dubai Plant,100,110962302.12,16364515.52,52998310.09,14456382.58,11113657.04,0.101,2030,Egypt
+P-2030-564,Quality Lab Upgrade Project 564,Processing System,Middle East & Africa,Johannesburg Plant,707,6619345.31,493833.71,2959811.06,1453971.05,602718.63,0.14,2030,Egypt
+P-2030-565,Processing System Project 565,Processing System,Middle East & Africa,Dubai Plant,972,159013898.82,20537886.95,76217831.49,23125263.13,18035030.81,0.059,2030,Egypt
+P-2030-566,Processing System Project 566,Processing System,Middle East & Africa,Johannesburg Plant,608,75342443.53,8326851.87,38451259.0,9570882.76,5500283.54,0.139,2030,Egypt
+P-2030-567,Processing System Project 567,Processing System,Middle East & Africa,Johannesburg Plant,747,13770263.57,962023.02,6204853.06,2790837.58,1210311.69,0.163,2030,Egypt
+P-2030-568,Plant Expansion Project 568,Quality Lab Upgrade,Middle East & Africa,Riyadh Plant,419,95502163.17,12263023.35,40172599.61,17334367.05,4514575.02,0.2,2030,Egypt
+P-2030-569,Quality Lab Upgrade Project 569,Quality Lab Upgrade,Middle East & Africa,Johannesburg Plant,289,45533175.84,5547326.67,18470167.21,8691436.58,3386141.9,0.174,2030,Egypt
+P-2030-570,Plant Expansion Project 570,Quality Lab Upgrade,Middle East & Africa,Riyadh Plant,800,39247537.38,2931685.61,15653401.87,8857753.87,3988660.49,0.172,2030,Egypt
+P-2030-571,Quality Lab Upgrade Project 571,Quality Lab Upgrade,Middle East & Africa,Riyadh Plant,430,18424867.66,2170894.51,9237340.31,3269476.66,1118785.0,0.086,2030,Egypt
+P-2030-572,Utilities Upgrade Project 572,Utilities Upgrade,Middle East & Africa,Riyadh Plant,758,15247298.45,1566350.93,7518639.42,2048071.25,1152161.39,0.176,2030,Egypt
+P-2030-573,Utilities Upgrade Project 573,Utilities Upgrade,Middle East & Africa,Riyadh Plant,696,35905886.79,5338399.04,17752326.9,4382434.63,3683858.15,0.066,2030,Egypt
+P-2030-574,Warehouse Automation Project 574,Utilities Upgrade,Middle East & Africa,Riyadh Plant,615,21591243.45,2892752.01,10416234.08,2591697.87,1415052.65,0.169,2030,Egypt
+P-2030-575,Utilities Upgrade Project 575,Utilities Upgrade,Middle East & Africa,Dubai Plant,110,120952288.4,12449803.36,52046103.73,25245054.0,10476058.07,0.098,2030,Egypt
+P-2030-576,Warehouse Automation Project 576,Warehouse Automation,Middle East & Africa,Dubai Plant,717,69957474.73,9240294.72,32836544.97,11309168.79,5195306.15,0.135,2030,Egypt
+P-2030-577,Warehouse Automation Project 577,Warehouse Automation,Middle East & Africa,Dubai Plant,769,82002924.66,10090904.91,36969699.73,15084140.52,6033352.95,0.134,2030,Egypt
+P-2030-578,Quality Lab Upgrade Project 578,Warehouse Automation,Middle East & Africa,Dubai Plant,858,55595326.23,9207041.03,20601216.87,11889439.87,6379991.04,0.092,2030,Egypt
+P-2030-579,Filling Line Project 579,Warehouse Automation,Middle East & Africa,Riyadh Plant,1209,21090308.44,1790640.45,9811566.59,2794995.3,2022469.16,0.2,2030,Egypt
+P-2030-580,Mixing & Blending Project 580,Mixing & Blending,Europe,Modena Plant,1007,22737235.36,3640099.62,10078229.6,2974328.45,2796795.07,0.082,2030,France
+P-2030-581,Mixing & Blending Project 581,Mixing & Blending,Europe,Le Havre Plant,843,25697525.49,4515916.54,11096383.04,3037449.39,2907832.22,0.105,2030,France
+P-2030-582,Processing System Project 582,Mixing & Blending,Europe,Warsaw Plant,885,23269801.65,3941336.05,9530628.77,3228289.97,2992867.3,0.109,2030,France
+P-2030-583,Packaging Line Project 583,Packaging Line,Europe,Warsaw Plant,208,36431065.3,4540806.77,13896593.47,8238613.8,2209089.6,0.194,2030,France
+P-2030-584,Plant Expansion Project 584,Plant Expansion,Europe,Modena Plant,404,58668459.11,8285555.41,26864765.01,9738108.28,5369424.29,0.074,2030,France
+P-2030-585,Filling Line Project 585,Processing System,Europe,Le Havre Plant,411,26591315.8,4341241.26,12639573.83,4839099.07,1606675.15,0.058,2030,France
+P-2030-586,Utilities Upgrade Project 586,Utilities Upgrade,Europe,Warsaw Plant,100,76276530.53,14201706.05,34303341.45,9721617.09,6054241.3,0.094,2030,France
+P-2030-587,Utilities Upgrade Project 587,Utilities Upgrade,Europe,Modena Plant,604,64528423.18,7773305.14,28206425.63,7893833.09,7804177.92,0.167,2030,France
+P-2030-588,Utilities Upgrade Project 588,Utilities Upgrade,Europe,Modena Plant,643,160926019.92,21850913.98,76084724.71,21793907.63,15926483.55,0.115,2030,France
+P-2030-589,Plant Expansion Project 589,Utilities Upgrade,Europe,Le Havre Plant,501,133004989.9,20674533.77,63253191.47,15778396.96,10748250.35,0.131,2030,France
+P-2030-590,Plant Expansion Project 590,Plant Expansion,Europe,Modena Plant,445,51505491.73,8837789.39,22397942.45,8958529.98,4962979.01,0.089,2030,Germany
+P-2030-591,Mixing & Blending Project 591,Quality Lab Upgrade,Europe,Modena Plant,427,72157660.73,10689842.36,36019764.85,11180184.48,4635073.45,0.05,2030,Germany
+P-2030-592,Warehouse Automation Project 592,Quality Lab Upgrade,Europe,Manchester Plant,409,43741191.67,6647255.66,23284492.42,6691083.64,2539087.82,0.05,2030,Germany
+P-2030-593,Warehouse Automation Project 593,Quality Lab Upgrade,Europe,Modena Plant,426,41996779.11,7028006.68,20810477.62,7115880.78,2327785.96,0.05,2030,Germany
+P-2030-594,Mixing & Blending Project 594,Quality Lab Upgrade,Europe,Manchester Plant,817,168153584.29,21851659.09,78216287.33,25303750.89,14190883.21,0.122,2030,Germany
+P-2030-595,Plant Expansion Project 595,Utilities Upgrade,Europe,Warsaw Plant,626,195341952.37,22819166.51,95476632.55,26042141.1,20583129.54,0.099,2030,Germany
+P-2030-596,Utilities Upgrade Project 596,Utilities Upgrade,Europe,Le Havre Plant,119,87855254.16,14318021.74,44358255.47,9460405.58,6298757.43,0.097,2030,Germany
+P-2030-597,Utilities Upgrade Project 597,Utilities Upgrade,Europe,Warsaw Plant,680,66223217.17,9866751.56,25501968.03,14831733.58,7703462.26,0.074,2030,Germany
+P-2030-598,Warehouse Automation Project 598,Warehouse Automation,Europe,Warsaw Plant,774,23048993.98,2838190.16,9622766.03,6108049.74,1132505.91,0.097,2030,Germany
+P-2030-599,Packaging Line Project 599,Warehouse Automation,Europe,Le Havre Plant,752,56402884.57,8333050.94,24442425.57,10060066.58,8009346.23,0.05,2030,Germany
+P-2030-600,Warehouse Automation Project 600,Warehouse Automation,Europe,Manchester Plant,658,73755891.05,15294181.26,33025718.8,10203481.64,6242601.64,0.068,2030,Germany
+P-2030-601,Filling Line Project 601,Filling Line,Asia Pacific,Guangzhou Plant,570,52614135.8,10268948.89,22660372.7,9316686.24,5570516.14,0.05,2030,India
+P-2030-602,Processing System Project 602,Filling Line,Asia Pacific,Singapore Plant,604,59424905.26,11509531.51,24240133.11,9337850.9,6274027.9,0.065,2030,India
+P-2030-603,Mixing & Blending Project 603,Filling Line,Asia Pacific,Sydney Plant,420,187848657.61,27663762.51,71907843.48,38505533.49,16047512.34,0.166,2030,India
+P-2030-604,Warehouse Automation Project 604,Filling Line,Asia Pacific,Guangzhou Plant,126,79372475.25,15855508.75,33331099.18,10852108.31,6587947.09,0.104,2030,India
+P-2030-605,Processing System Project 605,Processing System,Asia Pacific,Singapore Plant,273,67573787.9,10247629.97,29842580.45,12139063.31,5546109.49,0.09,2030,India
+P-2030-606,Processing System Project 606,Processing System,Asia Pacific,Bangkok Plant,402,161068867.11,21916328.75,62491889.68,27844902.52,16352111.33,0.16,2030,India
+P-2030-607,Processing System Project 607,Processing System,Asia Pacific,Singapore Plant,773,136260243.35,15666417.75,58290846.15,21913439.4,17112722.28,0.115,2030,India
+P-2030-608,Warehouse Automation Project 608,Warehouse Automation,Asia Pacific,Sydney Plant,497,47003254.33,8425334.82,16008915.77,9477052.87,4615363.71,0.131,2030,India
+P-2030-609,Filling Line Project 609,Warehouse Automation,Asia Pacific,Guangzhou Plant,779,90014145.71,9097999.83,46438362.86,9372604.17,7102873.68,0.163,2030,India
+P-2030-610,Warehouse Automation Project 610,Warehouse Automation,Asia Pacific,Sydney Plant,860,146649003.22,15718003.73,67649535.82,18512249.01,18115184.95,0.131,2030,India
+P-2030-611,Processing System Project 611,Warehouse Automation,Asia Pacific,Bangkok Plant,1161,235444250.21,24705890.29,110688578.51,31815549.97,26603539.09,0.139,2030,India
+P-2030-612,Plant Expansion Project 612,Plant Expansion,Europe,Modena Plant,1097,133785473.82,21357387.65,55264906.32,26182242.83,17971370.55,0.05,2030,Italy
+P-2030-613,Plant Expansion Project 613,Plant Expansion,Europe,Warsaw Plant,911,31421616.97,4000252.93,14397865.73,5821025.17,2726462.8,0.102,2030,Italy
+P-2030-614,Utilities Upgrade Project 614,Quality Lab Upgrade,Europe,Warsaw Plant,435,47809486.69,8010629.88,23179850.7,8998224.91,3028226.14,0.05,2030,Italy
+P-2030-615,Quality Lab Upgrade Project 615,Utilities Upgrade,Europe,Modena Plant,798,42532026.19,4865129.02,18873555.02,4940044.36,4587552.13,0.19,2030,Italy
+P-2030-616,Plant Expansion Project 616,Utilities Upgrade,Europe,Manchester Plant,918,98660342.07,9055596.62,46881300.17,11656030.9,9660793.05,0.183,2030,Italy
+P-2030-617,Quality Lab Upgrade Project 617,Utilities Upgrade,Europe,Manchester Plant,759,151315667.86,16730253.34,68303899.97,19973476.89,16265470.58,0.153,2030,Italy
+P-2030-618,Utilities Upgrade Project 618,Utilities Upgrade,Europe,Le Havre Plant,756,67072233.3,8788820.04,31207123.02,7378064.58,7010514.74,0.167,2030,Italy
+P-2030-619,Warehouse Automation Project 619,Warehouse Automation,Europe,Le Havre Plant,310,74355202.81,9787434.64,31725869.89,14553997.88,6554415.31,0.107,2030,Italy
+P-2030-620,Utilities Upgrade Project 620,Warehouse Automation,Europe,Le Havre Plant,1255,30368445.48,4120160.76,13992512.17,6894733.87,1359800.65,0.102,2030,Italy
+P-2030-621,Warehouse Automation Project 621,Warehouse Automation,Europe,Le Havre Plant,685,22040923.02,2450470.85,8796980.79,5879954.71,1203344.59,0.11,2030,Italy
+P-2030-622,Filling Line Project 622,Filling Line,Asia Pacific,Guangzhou Plant,100,74370735.89,13708876.15,33005200.31,10451752.05,5838615.51,0.097,2030,Japan
+P-2030-623,Mixing & Blending Project 623,Filling Line,Asia Pacific,Singapore Plant,770,62129801.22,10769083.01,24282060.78,12468290.19,6933860.92,0.067,2030,Japan
+P-2030-624,Quality Lab Upgrade Project 624,Filling Line,Asia Pacific,Singapore Plant,461,46792960.95,6207538.03,20599354.73,8302309.29,4550483.21,0.123,2030,Japan
+P-2030-625,Filling Line Project 625,Filling Line,Asia Pacific,Sydney Plant,463,47886253.77,9990553.73,18080292.54,9752200.3,4882204.75,0.055,2030,Japan
+P-2030-626,Filling Line Project 626,Mixing & Blending,Asia Pacific,Sydney Plant,321,140628072.52,21924048.85,51840926.36,27763068.87,12985996.48,0.153,2030,Japan
+P-2030-627,Utilities Upgrade Project 627,Mixing & Blending,Asia Pacific,Bangkok Plant,915,52440040.08,6097196.02,24288763.24,6321052.82,6376368.97,0.165,2030,Japan
+P-2030-628,Processing System Project 628,Mixing & Blending,Asia Pacific,Bangkok Plant,266,167898773.44,21772357.52,68273232.91,31463980.93,17136246.14,0.145,2030,Japan
+P-2030-629,Packaging Line Project 629,Packaging Line,Asia Pacific,Sydney Plant,898,94597744.96,11826168.6,36776483.34,19234674.2,12501334.14,0.104,2030,Japan
+P-2030-630,Packaging Line Project 630,Packaging Line,Asia Pacific,Sydney Plant,100,105848262.28,14202074.52,52064366.04,15148155.31,10355151.28,0.093,2030,Japan
+P-2030-631,Quality Lab Upgrade Project 631,Packaging Line,Asia Pacific,Guangzhou Plant,686,127970982.16,22367439.46,56218894.73,23234663.39,11372844.2,0.05,2030,Japan
+P-2030-632,Plant Expansion Project 632,Plant Expansion,Asia Pacific,Singapore Plant,558,86276333.5,8492064.98,39034136.08,13141397.6,8263455.77,0.172,2030,Japan
+P-2030-633,Packaging Line Project 633,Plant Expansion,Asia Pacific,Bangkok Plant,125,67342505.66,11326727.23,30390938.91,7272018.84,5120991.88,0.146,2030,Japan
+P-2030-634,Processing System Project 634,Processing System,Asia Pacific,Bangkok Plant,944,30927053.44,4685698.16,13113067.2,5624637.72,2514125.56,0.112,2030,Japan
+P-2030-635,Processing System Project 635,Processing System,Asia Pacific,Guangzhou Plant,567,23244111.17,4135109.69,10146063.06,4735204.24,1655552.2,0.05,2030,Japan
+P-2030-636,Packaging Line Project 636,Processing System,Asia Pacific,Bangkok Plant,367,63153345.66,10361441.21,27785866.83,9934647.36,6659197.32,0.066,2030,Japan
+P-2030-637,Processing System Project 637,Processing System,Asia Pacific,Guangzhou Plant,268,56573144.98,9413620.73,23432573.7,11258956.36,5365920.32,0.058,2030,Japan
+P-2030-638,Quality Lab Upgrade Project 638,Quality Lab Upgrade,Asia Pacific,Sydney Plant,679,33852286.9,5012215.98,17090331.61,3450068.26,3173533.2,0.126,2030,Japan
+P-2030-639,Quality Lab Upgrade Project 639,Quality Lab Upgrade,Asia Pacific,Singapore Plant,660,27071115.59,3543778.38,12477132.58,3554425.95,3009270.01,0.104,2030,Japan
+P-2030-640,Quality Lab Upgrade Project 640,Quality Lab Upgrade,Asia Pacific,Bangkok Plant,875,16999600.38,1122274.79,7515799.22,3087427.52,1747614.1,0.171,2030,Japan
+P-2030-641,Quality Lab Upgrade Project 641,Quality Lab Upgrade,Asia Pacific,Guangzhou Plant,881,16592252.56,1101967.65,7366691.61,3676036.54,1387188.27,0.149,2030,Japan
+P-2030-642,Utilities Upgrade Project 642,Utilities Upgrade,Asia Pacific,Guangzhou Plant,303,33603271.57,4606658.32,12711723.85,7192440.14,1954038.45,0.2,2030,Japan
+P-2030-643,Utilities Upgrade Project 643,Utilities Upgrade,Asia Pacific,Bangkok Plant,1185,54009666.51,8555069.07,19397941.48,12418624.82,5314749.22,0.085,2030,Japan
+P-2030-644,Warehouse Automation Project 644,Utilities Upgrade,Asia Pacific,Bangkok Plant,377,69374684.8,9188427.23,29875168.69,12532930.8,6885377.68,0.082,2030,Japan
+P-2030-645,Filling Line Project 645,Filling Line,Middle East & Africa,Johannesburg Plant,667,156288659.88,22481651.42,55155456.96,31475686.79,17946184.27,0.143,2030,Kenya
+P-2030-646,Plant Expansion Project 646,Filling Line,Middle East & Africa,Cairo Plant,787,37010515.33,5079218.18,14722322.91,7101430.66,4499822.13,0.106,2030,Kenya
+P-2030-647,Filling Line Project 647,Filling Line,Middle East & Africa,Dubai Plant,913,35744294.71,5534052.97,13994343.79,7828965.74,3892172.58,0.062,2030,Kenya
+P-2030-648,Quality Lab Upgrade Project 648,Filling Line,Middle East & Africa,Dubai Plant,339,16423954.19,2166743.7,7969438.14,3171465.65,1035378.83,0.059,2030,Kenya
+P-2030-649,Mixing & Blending Project 649,Mixing & Blending,Middle East & Africa,Cairo Plant,617,52656447.82,6481094.6,26622747.13,9488120.6,3177290.61,0.072,2030,Kenya
+P-2030-650,Mixing & Blending Project 650,Mixing & Blending,Middle East & Africa,Johannesburg Plant,824,16504011.39,1685051.54,6299501.65,4042680.9,1435897.12,0.159,2030,Kenya
+P-2030-651,Warehouse Automation Project 651,Mixing & Blending,Middle East & Africa,Cairo Plant,567,10662778.51,907693.26,4193842.51,2211305.5,883740.88,0.2,2030,Kenya
+P-2030-652,Mixing & Blending Project 652,Plant Expansion,Middle East & Africa,Cairo Plant,942,74412279.21,7950134.64,34292916.62,9076428.22,7093796.43,0.178,2030,Kenya
+P-2030-653,Plant Expansion Project 653,Plant Expansion,Middle East & Africa,Dubai Plant,100,112749770.11,17413967.41,50145049.33,14585489.58,10449766.71,0.125,2030,Kenya
+P-2030-654,Plant Expansion Project 654,Plant Expansion,Middle East & Africa,Riyadh Plant,987,33648792.42,5285746.72,14486228.22,4603941.83,2405896.43,0.154,2030,Kenya
+P-2030-655,Mixing & Blending Project 655,Plant Expansion,Middle East & Africa,Johannesburg Plant,100,122598516.63,19287794.12,54847685.41,15296893.19,12255155.26,0.116,2030,Kenya
+P-2030-656,Processing System Project 656,Processing System,Middle East & Africa,Johannesburg Plant,805,12617411.84,840015.69,5546075.81,2964601.18,944744.49,0.166,2030,Kenya
+P-2030-657,Packaging Line Project 657,Processing System,Middle East & Africa,Johannesburg Plant,690,9372774.59,677999.02,4135126.0,1956191.46,689381.31,0.166,2030,Kenya
+P-2030-658,Packaging Line Project 658,Processing System,Middle East & Africa,Dubai Plant,1014,16873866.34,1053115.36,7378458.24,3405495.78,1599826.87,0.177,2030,Kenya
+P-2030-659,Plant Expansion Project 659,Processing System,Middle East & Africa,Cairo Plant,888,14380310.94,958305.75,5744849.27,2969831.39,1657794.16,0.168,2030,Kenya
+P-2030-660,Processing System Project 660,Quality Lab Upgrade,Middle East & Africa,Cairo Plant,417,31341100.14,4000981.61,13961038.97,6136895.02,2180684.55,0.129,2030,Kenya
+P-2030-661,Quality Lab Upgrade Project 661,Quality Lab Upgrade,Middle East & Africa,Cairo Plant,419,46233170.59,5934382.02,19693566.01,9258939.16,2636712.45,0.16,2030,Kenya
+P-2030-662,Utilities Upgrade Project 662,Quality Lab Upgrade,Middle East & Africa,Cairo Plant,348,59652835.53,8755959.57,22734044.71,11069348.07,4409132.89,0.184,2030,Kenya
+P-2030-663,Quality Lab Upgrade Project 663,Quality Lab Upgrade,Middle East & Africa,Dubai Plant,733,22463053.06,1832988.79,8941848.06,5016318.12,2147416.74,0.157,2030,Kenya
+P-2030-664,Utilities Upgrade Project 664,Utilities Upgrade,Middle East & Africa,Cairo Plant,552,32616704.85,5007567.71,15555821.85,3163133.61,3056607.65,0.114,2030,Kenya
+P-2030-665,Plant Expansion Project 665,Utilities Upgrade,Middle East & Africa,Dubai Plant,693,41614603.38,5343070.97,21897946.91,5282542.28,3978265.78,0.065,2030,Kenya
+P-2030-666,Utilities Upgrade Project 666,Utilities Upgrade,Middle East & Africa,Cairo Plant,455,15464466.52,1409866.76,6917778.55,2490097.85,1311576.64,0.199,2030,Kenya
+P-2030-667,Utilities Upgrade Project 667,Utilities Upgrade,Middle East & Africa,Dubai Plant,716,35357306.13,4667870.84,19673532.94,4398049.99,2891541.1,0.053,2030,Kenya
+P-2030-668,Packaging Line Project 668,Warehouse Automation,Middle East & Africa,Riyadh Plant,525,90095855.38,13325648.11,41657283.8,15515631.76,7138753.58,0.05,2030,Kenya
+P-2030-669,Warehouse Automation Project 669,Warehouse Automation,Middle East & Africa,Dubai Plant,723,72929663.45,8888410.03,30833307.72,14785641.98,5210153.44,0.144,2030,Kenya
+P-2030-670,Warehouse Automation Project 670,Warehouse Automation,Middle East & Africa,Cairo Plant,111,125987006.28,19942589.43,57975322.99,17109093.14,8873599.9,0.14,2030,Kenya
+P-2030-671,Packaging Line Project 671,Warehouse Automation,Middle East & Africa,Cairo Plant,103,159107268.64,19754712.43,69632873.09,27061295.45,15667130.42,0.108,2030,Kenya
+P-2030-672,Packaging Line Project 672,Mixing & Blending,Latin America,Sao Paulo Plant,214,20494416.64,2830404.63,7687299.13,5254095.66,1336132.84,0.136,2030,Mexico
+P-2030-673,Processing System Project 673,Mixing & Blending,Latin America,Monterrey Plant,510,46082665.85,7380127.8,18344645.43,9400256.61,5463673.7,0.05,2030,Mexico
+P-2030-674,Quality Lab Upgrade Project 674,Mixing & Blending,Latin America,Lima Plant,1147,58385145.41,10276755.2,21599934.21,11978456.86,6687000.07,0.062,2030,Mexico
+P-2030-675,Utilities Upgrade Project 675,Mixing & Blending,Latin America,Sao Paulo Plant,226,16228397.61,2220478.03,6045937.26,3553688.44,981695.91,0.185,2030,Mexico
+P-2030-676,Filling Line Project 676,Quality Lab Upgrade,Latin America,Monterrey Plant,323,95899133.16,15672647.79,39331847.7,16034247.08,11126002.37,0.1,2030,Mexico
+P-2030-677,Mixing & Blending Project 677,Quality Lab Upgrade,Latin America,Sao Paulo Plant,659,29772008.12,3402226.56,14604789.49,3967431.01,2277828.53,0.158,2030,Mexico
+P-2030-678,Packaging Line Project 678,Utilities Upgrade,Latin America,Sao Paulo Plant,288,140062069.1,20442377.79,58779366.53,21869308.73,14784446.7,0.13,2030,Mexico
+P-2030-679,Quality Lab Upgrade Project 679,Utilities Upgrade,Latin America,Lima Plant,241,42397742.24,6072902.96,19281936.27,7625013.98,4051753.67,0.084,2030,Mexico
+P-2030-680,Processing System Project 680,Warehouse Automation,Latin America,Sao Paulo Plant,867,128403182.24,16887561.19,57175294.2,25771397.03,14462082.54,0.053,2030,Mexico
+P-2030-681,Filling Line Project 681,Warehouse Automation,Latin America,Sao Paulo Plant,709,76194129.96,13382571.74,29156529.96,10919360.28,5490948.06,0.2,2030,Mexico
+P-2030-682,Utilities Upgrade Project 682,Warehouse Automation,Latin America,Sao Paulo Plant,131,103737279.85,10781866.11,50058740.09,20341542.84,7507063.84,0.1,2030,Mexico
+P-2030-683,Quality Lab Upgrade Project 683,Filling Line,Latin America,Bogota Plant,343,43732787.2,6827116.77,17499416.51,7801274.17,4037653.24,0.118,2030,Peru
+P-2030-684,Filling Line Project 684,Filling Line,Latin America,Sao Paulo Plant,337,64395294.99,12271593.74,26532179.0,10338584.49,5393328.19,0.106,2030,Peru
+P-2030-685,Plant Expansion Project 685,Filling Line,Latin America,Sao Paulo Plant,232,83725740.62,13315357.87,34885243.65,16567063.31,7920558.64,0.054,2030,Peru
+P-2030-686,Quality Lab Upgrade Project 686,Filling Line,Latin America,Sao Paulo Plant,505,96912419.38,13442913.03,47903126.52,16215312.76,7059495.02,0.05,2030,Peru
+P-2030-687,Mixing & Blending Project 687,Mixing & Blending,Latin America,Monterrey Plant,1145,83584170.8,11140228.69,37015220.86,19101771.91,7620111.54,0.05,2030,Peru
+P-2030-688,Mixing & Blending Project 688,Mixing & Blending,Latin America,Sao Paulo Plant,873,67928779.07,12963533.81,23130194.34,14584356.61,7944043.36,0.065,2030,Peru
+P-2030-689,Filling Line Project 689,Mixing & Blending,Latin America,Monterrey Plant,242,23420232.95,3337344.92,8623957.95,5562311.97,1357358.68,0.146,2030,Peru
+P-2030-690,Filling Line Project 690,Mixing & Blending,Latin America,Monterrey Plant,759,54366582.32,6182925.63,26175382.81,11584763.13,4193823.37,0.05,2030,Peru
+P-2030-691,Packaging Line Project 691,Packaging Line,Latin America,Sao Paulo Plant,823,51809567.89,7661511.67,21215133.85,9706513.07,4352352.54,0.115,2030,Peru
+P-2030-692,Processing System Project 692,Packaging Line,Latin America,Bogota Plant,681,55547569.96,6739149.48,25458039.48,10882784.19,4454908.31,0.097,2030,Peru
+P-2030-693,Packaging Line Project 693,Packaging Line,Latin America,Sao Paulo Plant,679,81203588.05,11081252.75,30464925.71,17622965.97,9021610.18,0.1,2030,Peru
+P-2030-694,Packaging Line Project 694,Packaging Line,Latin America,Lima Plant,514,72513772.25,10971266.15,33089054.97,8733122.22,4911163.52,0.165,2030,Peru
+P-2030-695,Processing System Project 695,Processing System,Latin America,Bogota Plant,637,39094386.67,5878685.43,19370420.33,7290912.13,2240296.8,0.05,2030,Peru
+P-2030-696,Mixing & Blending Project 696,Processing System,Latin America,Bogota Plant,576,41267808.42,5845199.65,20571353.43,7873326.56,2414351.05,0.058,2030,Peru
+P-2030-697,Processing System Project 697,Processing System,Latin America,Bogota Plant,499,91915313.02,13928205.34,43915865.04,17548929.24,5715954.92,0.05,2030,Peru
+P-2030-698,Quality Lab Upgrade Project 698,Quality Lab Upgrade,Latin America,Monterrey Plant,689,143374861.99,24666824.9,64581381.26,25325853.64,13339131.38,0.05,2030,Peru
+P-2030-699,Quality Lab Upgrade Project 699,Quality Lab Upgrade,Latin America,Monterrey Plant,607,13405733.4,1617339.12,7079196.89,1704395.26,882419.4,0.116,2030,Peru
+P-2030-700,Quality Lab Upgrade Project 700,Quality Lab Upgrade,Latin America,Monterrey Plant,458,42781282.31,6477357.32,21633464.33,6793952.4,2349507.82,0.056,2030,Peru
+P-2030-701,Quality Lab Upgrade Project 701,Quality Lab Upgrade,Latin America,Lima Plant,607,45583782.42,7847100.32,22654662.23,7746927.51,2021762.78,0.05,2030,Peru
+P-2030-702,Utilities Upgrade Project 702,Utilities Upgrade,Latin America,Monterrey Plant,279,53155832.11,7783282.9,21601360.82,9472573.41,5309015.61,0.081,2030,Peru
+P-2030-703,Utilities Upgrade Project 703,Utilities Upgrade,Latin America,Lima Plant,774,33235039.69,3724493.74,16921562.85,5136531.54,2581441.93,0.09,2030,Peru
+P-2030-704,Warehouse Automation Project 704,Utilities Upgrade,Latin America,Monterrey Plant,327,59326090.03,8836311.55,23949041.74,11039529.91,4976028.31,0.107,2030,Peru
+P-2030-705,Utilities Upgrade Project 705,Filling Line,Europe,Le Havre Plant,468,66683963.99,10734326.0,25295674.19,10589649.25,6924766.89,0.145,2030,Poland
+P-2030-706,Filling Line Project 706,Filling Line,Europe,Warsaw Plant,890,86253000.41,12118066.65,32088010.93,17643886.21,7274546.37,0.175,2030,Poland
+P-2030-707,Mixing & Blending Project 707,Mixing & Blending,Europe,Warsaw Plant,132,120302239.03,11785856.25,59208307.39,17630332.59,9871549.15,0.138,2030,Poland
+P-2030-708,Utilities Upgrade Project 708,Mixing & Blending,Europe,Manchester Plant,129,85855946.85,8886815.33,36774874.08,15978036.01,9023764.68,0.128,2030,Poland
+P-2030-709,Mixing & Blending Project 709,Mixing & Blending,Europe,Manchester Plant,836,51807349.49,8432720.08,22068927.34,8581229.27,5577054.71,0.07,2030,Poland
+P-2030-710,Filling Line Project 710,Packaging Line,Europe,Le Havre Plant,311,30471130.92,3309699.97,13081521.76,5955281.83,1772850.5,0.176,2030,Poland
+P-2030-711,Plant Expansion Project 711,Plant Expansion,Europe,Warsaw Plant,517,25299734.1,3590262.02,11438939.78,3785336.61,2280503.96,0.131,2030,Poland
+P-2030-712,Plant Expansion Project 712,Plant Expansion,Europe,Le Havre Plant,142,65687682.04,11357003.43,31196374.98,5963322.67,6275098.21,0.138,2030,Poland
+P-2030-713,Plant Expansion Project 713,Quality Lab Upgrade,Europe,Manchester Plant,778,161010970.51,22961590.16,69960923.63,27868945.04,12647589.16,0.122,2030,Poland
+P-2030-714,Utilities Upgrade Project 714,Quality Lab Upgrade,Europe,Warsaw Plant,715,65887315.48,9790365.94,35208789.7,10450270.5,3284406.37,0.05,2030,Poland
+P-2030-715,Quality Lab Upgrade Project 715,Quality Lab Upgrade,Europe,Manchester Plant,767,55303070.06,6868684.01,27734730.9,10158071.99,3249961.48,0.05,2030,Poland
+P-2030-716,Quality Lab Upgrade Project 716,Quality Lab Upgrade,Europe,Le Havre Plant,499,38003872.32,6274232.72,19206699.53,5534267.03,2399094.72,0.068,2030,Poland
+P-2030-717,Utilities Upgrade Project 717,Utilities Upgrade,Europe,Manchester Plant,481,103431097.87,22905002.21,45424876.68,13682773.21,7898888.4,0.059,2030,Poland
+P-2030-718,Utilities Upgrade Project 718,Utilities Upgrade,Europe,Modena Plant,598,55450474.1,8938725.72,22322031.77,10063172.1,5763095.22,0.099,2030,Poland
+P-2030-719,Utilities Upgrade Project 719,Utilities Upgrade,Europe,Warsaw Plant,105,82766937.39,16205254.88,36696832.41,10160607.17,6808271.68,0.099,2030,Poland
+P-2030-720,Filling Line Project 720,Utilities Upgrade,Europe,Manchester Plant,656,57339053.42,9036985.3,22007455.19,12790233.58,6815824.06,0.05,2030,Poland
+P-2030-721,Quality Lab Upgrade Project 721,Warehouse Automation,Europe,Modena Plant,100,66898063.1,12991844.16,27624968.6,10044763.59,4879699.43,0.122,2030,Poland
+P-2030-722,Warehouse Automation Project 722,Warehouse Automation,Europe,Warsaw Plant,867,85997842.54,14318114.37,37451847.34,13572775.66,10266704.23,0.069,2030,Poland
+P-2030-723,Warehouse Automation Project 723,Warehouse Automation,Europe,Le Havre Plant,239,64567475.37,9334510.88,27546825.38,12072587.35,6124826.54,0.083,2030,Poland
+P-2030-724,Warehouse Automation Project 724,Warehouse Automation,Europe,Manchester Plant,858,18737985.56,2407201.0,8041056.18,4340143.76,1022387.47,0.095,2030,Poland
+P-2030-725,Mixing & Blending Project 725,Packaging Line,Middle East & Africa,Dubai Plant,867,133323487.76,20833491.84,49169539.11,29238308.73,18075136.72,0.055,2030,Saudi Arabia
+P-2030-726,Packaging Line Project 726,Packaging Line,Middle East & Africa,Dubai Plant,588,70792917.27,10172194.05,30097938.12,11323258.25,7921531.01,0.096,2030,Saudi Arabia
+P-2030-727,Processing System Project 727,Processing System,Middle East & Africa,Johannesburg Plant,456,154399713.39,26825126.79,69996592.42,26706276.37,7794544.84,0.084,2030,Saudi Arabia
+P-2030-728,Warehouse Automation Project 728,Processing System,Middle East & Africa,Johannesburg Plant,1081,14504536.16,1371813.47,6582322.14,1835215.22,1399338.14,0.2,2030,Saudi Arabia
+P-2030-729,Processing System Project 729,Processing System,Middle East & Africa,Dubai Plant,664,74595014.36,8065419.6,39090623.6,7679494.42,4256280.72,0.156,2030,Saudi Arabia
+P-2030-730,Processing System Project 730,Processing System,Middle East & Africa,Johannesburg Plant,453,163146713.41,25596128.15,76380205.54,29672939.05,9605473.62,0.086,2030,Saudi Arabia
+P-2030-731,Quality Lab Upgrade Project 731,Quality Lab Upgrade,Middle East & Africa,Dubai Plant,265,79697553.16,7146075.74,34466780.41,14122252.74,8257675.57,0.169,2030,Saudi Arabia
+P-2030-732,Quality Lab Upgrade Project 732,Quality Lab Upgrade,Middle East & Africa,Cairo Plant,416,100901649.57,9428239.26,44648318.56,16672832.85,10086596.59,0.172,2030,Saudi Arabia
+P-2030-733,Quality Lab Upgrade Project 733,Quality Lab Upgrade,Middle East & Africa,Dubai Plant,242,45935920.62,6356584.04,16207157.99,9829096.87,3552749.67,0.2,2030,Saudi Arabia
+P-2030-734,Quality Lab Upgrade Project 734,Quality Lab Upgrade,Middle East & Africa,Cairo Plant,304,42897801.06,4859989.67,15548578.32,9915237.74,3382245.23,0.184,2030,Saudi Arabia
+P-2030-735,Warehouse Automation Project 735,Warehouse Automation,Middle East & Africa,Dubai Plant,100,126980247.64,21402063.63,58051358.95,18472618.16,9420099.7,0.129,2030,Saudi Arabia
+P-2030-736,Warehouse Automation Project 736,Warehouse Automation,Middle East & Africa,Johannesburg Plant,645,94149439.89,14466907.5,42314821.65,20536586.4,6573954.65,0.062,2030,Saudi Arabia
+P-2030-737,Warehouse Automation Project 737,Warehouse Automation,Middle East & Africa,Dubai Plant,579,55338202.86,8790645.94,21997294.25,11848864.5,6042239.3,0.087,2030,Saudi Arabia
+P-2030-738,Packaging Line Project 738,Warehouse Automation,Middle East & Africa,Johannesburg Plant,856,122852534.46,19444568.94,57271444.93,20402323.59,8181298.61,0.05,2030,Saudi Arabia
+P-2030-739,Utilities Upgrade Project 739,Filling Line,Asia Pacific,Singapore Plant,650,90499549.65,11976663.18,47772780.03,14746182.98,4942329.11,0.053,2030,Singapore
+P-2030-740,Filling Line Project 740,Filling Line,Asia Pacific,Singapore Plant,111,93121312.9,15955015.52,40756030.55,13733473.02,7507461.43,0.109,2030,Singapore
+P-2030-741,Filling Line Project 741,Filling Line,Asia Pacific,Guangzhou Plant,160,141609645.91,15995696.32,69600180.09,20403544.49,11900430.49,0.103,2030,Singapore
+P-2030-742,Warehouse Automation Project 742,Filling Line,Asia Pacific,Singapore Plant,595,58308061.89,11433449.72,23468773.3,10587682.96,5445349.07,0.05,2030,Singapore
+P-2030-743,Mixing & Blending Project 743,Mixing & Blending,Asia Pacific,Bangkok Plant,317,137646931.39,20723103.64,52190137.43,28216853.51,14537300.94,0.133,2030,Singapore
+P-2030-744,Utilities Upgrade Project 744,Mixing & Blending,Asia Pacific,Guangzhou Plant,688,38539926.53,3663519.83,18936248.02,8446568.17,2786711.86,0.08,2030,Singapore
+P-2030-745,Mixing & Blending Project 745,Mixing & Blending,Asia Pacific,Guangzhou Plant,567,50227077.37,4559959.95,22797780.48,11687839.06,3646764.71,0.1,2030,Singapore
+P-2030-746,Packaging Line Project 746,Packaging Line,Asia Pacific,Sydney Plant,1229,125836638.7,17104652.46,49402813.58,23124069.75,15296082.81,0.115,2030,Singapore
+P-2030-747,Packaging Line Project 747,Packaging Line,Asia Pacific,Guangzhou Plant,145,132325023.97,15405295.73,65174128.3,21216899.62,12716080.51,0.089,2030,Singapore
+P-2030-748,Packaging Line Project 748,Packaging Line,Asia Pacific,Sydney Plant,836,81264509.59,10592800.57,31240818.12,16245647.82,8237040.03,0.112,2030,Singapore
+P-2030-749,Packaging Line Project 749,Packaging Line,Asia Pacific,Bangkok Plant,838,77207224.15,10452731.22,30252108.02,15701797.56,8568387.95,0.107,2030,Singapore
+P-2030-750,Filling Line Project 750,Plant Expansion,Asia Pacific,Singapore Plant,705,97056890.68,9992263.86,45524903.4,14252094.92,8681372.57,0.167,2030,Singapore
+P-2030-751,Plant Expansion Project 751,Plant Expansion,Asia Pacific,Bangkok Plant,103,86074715.66,8842455.92,41373987.0,15091803.65,6743073.09,0.145,2030,Singapore
+P-2030-752,Plant Expansion Project 752,Plant Expansion,Asia Pacific,Sydney Plant,125,100818730.75,9752116.52,51037173.57,15093758.64,7809190.68,0.131,2030,Singapore
+P-2030-753,Filling Line Project 753,Plant Expansion,Asia Pacific,Singapore Plant,721,20530173.99,2592370.78,9605722.1,3449441.7,1883375.46,0.063,2030,Singapore
+P-2030-754,Processing System Project 754,Processing System,Asia Pacific,Guangzhou Plant,428,21262351.28,3394719.48,10401188.16,3241112.78,1268542.83,0.067,2030,Singapore
+P-2030-755,Filling Line Project 755,Processing System,Asia Pacific,Sydney Plant,865,26239253.32,3940174.5,11183220.05,4609429.29,2046830.62,0.136,2030,Singapore
+P-2030-756,Processing System Project 756,Processing System,Asia Pacific,Bangkok Plant,844,44733632.85,6135929.88,18342872.6,8668940.2,3152264.79,0.122,2030,Singapore
+P-2030-757,Processing System Project 757,Processing System,Asia Pacific,Sydney Plant,236,53416746.99,7692433.03,24647569.7,10208116.37,4760752.58,0.069,2030,Singapore
+P-2030-758,Utilities Upgrade Project 758,Utilities Upgrade,Asia Pacific,Guangzhou Plant,879,110489752.03,13402082.24,53853204.4,16489560.98,12675958.7,0.077,2030,Singapore
+P-2030-759,Packaging Line Project 759,Utilities Upgrade,Asia Pacific,Sydney Plant,598,123852313.42,15994985.45,54358851.46,21526182.7,14179905.54,0.082,2030,Singapore
+P-2030-760,Utilities Upgrade Project 760,Utilities Upgrade,Asia Pacific,Sydney Plant,955,166858605.72,20585108.05,86289815.19,21665769.33,16725808.53,0.081,2030,Singapore
+P-2030-761,Utilities Upgrade Project 761,Utilities Upgrade,Asia Pacific,Bangkok Plant,339,60532394.25,7619324.59,27399014.48,11729992.82,5425655.28,0.082,2030,Singapore
+P-2030-762,Filling Line Project 762,Filling Line,Middle East & Africa,Riyadh Plant,892,154859123.69,31457317.99,63871118.75,22858627.76,14715197.36,0.056,2030,South Africa
+P-2030-763,Filling Line Project 763,Filling Line,Middle East & Africa,Dubai Plant,1055,38206743.44,5434031.72,15463953.69,7659317.98,4615784.02,0.084,2030,South Africa
+P-2030-764,Filling Line Project 764,Filling Line,Middle East & Africa,Riyadh Plant,945,152217196.93,22657268.79,77729549.76,23260955.43,13523374.72,0.057,2030,South Africa
+P-2030-765,Mixing & Blending Project 765,Mixing & Blending,Middle East & Africa,Johannesburg Plant,652,118301512.27,15809792.66,47996692.59,24735504.24,6491066.81,0.177,2030,South Africa
+P-2030-766,Plant Expansion Project 766,Mixing & Blending,Middle East & Africa,Dubai Plant,684,97537315.16,16105296.65,38283145.01,16340741.79,10231453.71,0.104,2030,South Africa
+P-2030-767,Quality Lab Upgrade Project 767,Mixing & Blending,Middle East & Africa,Cairo Plant,459,59912025.8,7554792.28,23783558.4,11657966.05,4108481.52,0.185,2030,South Africa
+P-2030-768,Mixing & Blending Project 768,Mixing & Blending,Middle East & Africa,Cairo Plant,497,113087052.4,13036407.96,45391704.4,22066698.95,6544157.85,0.188,2030,South Africa
+P-2030-769,Utilities Upgrade Project 769,Packaging Line,Middle East & Africa,Cairo Plant,556,20000630.26,2604722.53,8895100.02,4653006.91,1405949.83,0.082,2030,South Africa
+P-2030-770,Packaging Line Project 770,Packaging Line,Middle East & Africa,Riyadh Plant,403,15013433.0,2136031.72,7235585.38,2658521.25,966141.68,0.082,2030,South Africa
+P-2030-771,Packaging Line Project 771,Packaging Line,Middle East & Africa,Johannesburg Plant,495,19648947.64,2750896.71,8702725.48,4099710.45,1685807.65,0.077,2030,South Africa
+P-2030-772,Plant Expansion Project 772,Plant Expansion,Middle East & Africa,Johannesburg Plant,707,130139698.61,21661216.25,48418840.55,24376684.89,17180720.8,0.071,2030,South Africa
+P-2030-773,Filling Line Project 773,Plant Expansion,Middle East & Africa,Johannesburg Plant,725,64425693.35,8066690.29,27991109.34,8335754.42,8025644.37,0.169,2030,South Africa
+P-2030-774,Plant Expansion Project 774,Plant Expansion,Middle East & Africa,Dubai Plant,254,68780282.49,7386126.02,35416470.99,10887601.38,7392382.34,0.06,2030,South Africa
+P-2030-775,Warehouse Automation Project 775,Quality Lab Upgrade,Middle East & Africa,Riyadh Plant,247,47817827.13,6503606.36,17089646.22,10386562.26,3612780.58,0.2,2030,South Africa
+P-2030-776,Quality Lab Upgrade Project 776,Quality Lab Upgrade,Middle East & Africa,Johannesburg Plant,339,48849779.96,6206248.38,20426497.42,8212192.14,3057624.63,0.197,2030,South Africa
+P-2030-777,Quality Lab Upgrade Project 777,Quality Lab Upgrade,Middle East & Africa,Riyadh Plant,652,16840761.36,1355912.88,6273946.02,3667050.36,1730495.07,0.2,2030,South Africa
+P-2030-778,Utilities Upgrade Project 778,Utilities Upgrade,Middle East & Africa,Johannesburg Plant,574,23167493.37,3372539.21,11264158.67,2995745.14,2140886.49,0.091,2030,South Africa
+P-2030-779,Utilities Upgrade Project 779,Utilities Upgrade,Middle East & Africa,Dubai Plant,100,152081412.21,14094513.62,70817625.88,27691217.64,14882818.39,0.114,2030,South Africa
+P-2030-780,Utilities Upgrade Project 780,Utilities Upgrade,Middle East & Africa,Cairo Plant,670,16985543.72,1626131.58,7545179.05,2747063.51,1387823.85,0.189,2030,South Africa
+P-2030-781,Utilities Upgrade Project 781,Utilities Upgrade,Middle East & Africa,Riyadh Plant,112,111999188.09,10854247.34,52296628.8,19817545.34,12054193.13,0.092,2030,South Africa
+P-2030-782,Warehouse Automation Project 782,Warehouse Automation,Middle East & Africa,Riyadh Plant,685,13840632.53,1191086.47,6723064.67,1868795.85,1288000.9,0.192,2030,South Africa
+P-2030-783,Packaging Line Project 783,Warehouse Automation,Middle East & Africa,Cairo Plant,141,166075531.92,15016197.12,79193923.71,25912804.14,15354573.62,0.157,2030,South Africa
+P-2030-784,Warehouse Automation Project 784,Warehouse Automation,Middle East & Africa,Dubai Plant,624,57178870.37,8886364.63,21181536.97,12044011.31,6899354.74,0.09,2030,South Africa
+P-2030-785,Warehouse Automation Project 785,Warehouse Automation,Middle East & Africa,Johannesburg Plant,112,103598360.43,16071397.72,51088802.83,12575529.74,8226497.71,0.087,2030,South Africa
+P-2030-786,Warehouse Automation Project 786,Filling Line,Asia Pacific,Bangkok Plant,144,86835487.52,9964457.63,44265245.17,12431636.35,8748755.96,0.082,2030,Thailand
+P-2030-787,Filling Line Project 787,Filling Line,Asia Pacific,Bangkok Plant,501,115121114.0,16851154.73,62345653.9,18528815.07,6761657.53,0.052,2030,Thailand
+P-2030-788,Warehouse Automation Project 788,Filling Line,Asia Pacific,Sydney Plant,643,54587079.76,10639859.26,22672705.88,10371197.29,5940855.53,0.05,2030,Thailand
+P-2030-789,Filling Line Project 789,Filling Line,Asia Pacific,Bangkok Plant,736,70661958.27,13263799.31,30299959.01,10214542.02,6828078.53,0.063,2030,Thailand
+P-2030-790,Filling Line Project 790,Mixing & Blending,Asia Pacific,Bangkok Plant,330,125202908.0,16913358.27,46294146.71,26597239.78,12081417.6,0.15,2030,Thailand
+P-2030-791,Mixing & Blending Project 791,Mixing & Blending,Asia Pacific,Singapore Plant,357,90928280.02,18260381.94,40695927.36,12976331.25,5592777.2,0.123,2030,Thailand
+P-2030-792,Mixing & Blending Project 792,Mixing & Blending,Asia Pacific,Guangzhou Plant,1007,70754114.97,6740925.71,34397776.24,7899157.26,6694834.17,0.2,2030,Thailand
+P-2030-793,Packaging Line Project 793,Packaging Line,Asia Pacific,Bangkok Plant,584,107340036.65,18023591.16,47316960.29,18204988.54,10347686.08,0.05,2030,Thailand
+P-2030-794,Packaging Line Project 794,Packaging Line,Asia Pacific,Guangzhou Plant,760,82177311.56,10510113.84,33278074.04,16530024.34,8684712.03,0.112,2030,Thailand
+P-2030-795,Warehouse Automation Project 795,Packaging Line,Asia Pacific,Singapore Plant,365,48985596.1,5538822.43,20892323.11,8309557.6,5126419.98,0.121,2030,Thailand
+P-2030-796,Packaging Line Project 796,Packaging Line,Asia Pacific,Bangkok Plant,485,69204113.91,9646928.09,29088949.84,11474265.62,6760858.69,0.133,2030,Thailand
+P-2030-797,Plant Expansion Project 797,Plant Expansion,Asia Pacific,Singapore Plant,524,85797714.8,7939465.34,41857837.68,12971687.47,7670298.9,0.14,2030,Thailand
+P-2030-798,Filling Line Project 798,Plant Expansion,Asia Pacific,Sydney Plant,679,49875061.79,7275040.36,19557146.22,8608439.45,6133358.25,0.132,2030,Thailand
+P-2030-799,Plant Expansion Project 799,Plant Expansion,Asia Pacific,Sydney Plant,519,65833600.79,10813846.07,25407241.84,11918190.94,8505483.25,0.096,2030,Thailand
+P-2030-800,Utilities Upgrade Project 800,Quality Lab Upgrade,Asia Pacific,Bangkok Plant,609,30083163.87,4092938.34,14782556.66,3485044.05,3582964.52,0.085,2030,Thailand
+P-2030-801,Packaging Line Project 801,Quality Lab Upgrade,Asia Pacific,Bangkok Plant,131,166585645.05,15642238.53,82503671.16,23482775.36,16297757.08,0.144,2030,Thailand
+P-2030-802,Utilities Upgrade Project 802,Utilities Upgrade,Asia Pacific,Bangkok Plant,456,26550686.9,3544241.33,13553787.98,3638110.68,1565060.46,0.068,2030,Thailand
+P-2030-803,Utilities Upgrade Project 803,Utilities Upgrade,Asia Pacific,Guangzhou Plant,1012,55537895.94,7615011.91,21891011.23,13655586.06,4318786.41,0.08,2030,Thailand
+P-2030-804,Utilities Upgrade Project 804,Utilities Upgrade,Asia Pacific,Guangzhou Plant,576,32425059.85,4329598.78,17201427.02,5246096.56,1913084.64,0.05,2030,Thailand
+P-2030-805,Utilities Upgrade Project 805,Utilities Upgrade,Asia Pacific,Bangkok Plant,401,57123083.66,8930504.49,21058219.23,11072575.41,3573607.6,0.2,2030,Thailand
+P-2030-806,Warehouse Automation Project 806,Warehouse Automation,Asia Pacific,Singapore Plant,312,51639608.17,7675152.47,22514446.8,9775345.13,4528090.6,0.111,2030,Thailand
+P-2030-807,Warehouse Automation Project 807,Warehouse Automation,Asia Pacific,Singapore Plant,788,93946369.61,11084793.8,47500066.16,10481128.53,7132905.36,0.181,2030,Thailand
+P-2030-808,Quality Lab Upgrade Project 808,Filling Line,Middle East & Africa,Johannesburg Plant,578,98987547.62,15484104.48,37290572.48,19534539.33,11163198.1,0.123,2030,United Arab Emirates
+P-2030-809,Processing System Project 809,Filling Line,Middle East & Africa,Cairo Plant,435,64037675.31,7695618.34,31609859.77,9305948.09,4163620.75,0.141,2030,United Arab Emirates
+P-2030-810,Utilities Upgrade Project 810,Mixing & Blending,Middle East & Africa,Cairo Plant,559,59669221.04,9582520.58,25341437.73,9943563.72,5681275.89,0.121,2030,United Arab Emirates
+P-2030-811,Packaging Line Project 811,Mixing & Blending,Middle East & Africa,Cairo Plant,528,65638502.88,9066488.73,33297411.27,11206390.65,4445577.5,0.057,2030,United Arab Emirates
+P-2030-812,Utilities Upgrade Project 812,Mixing & Blending,Middle East & Africa,Dubai Plant,403,47335440.3,6597349.56,24020125.67,9144599.08,3270144.14,0.05,2030,United Arab Emirates
+P-2030-813,Processing System Project 813,Processing System,Middle East & Africa,Johannesburg Plant,1305,19474690.04,1641683.43,8980843.24,2783404.42,1745300.09,0.2,2030,United Arab Emirates
+P-2030-814,Processing System Project 814,Processing System,Middle East & Africa,Riyadh Plant,975,15946589.07,1494356.94,7492310.77,1991385.32,1308024.9,0.2,2030,United Arab Emirates
+P-2030-815,Quality Lab Upgrade Project 815,Quality Lab Upgrade,Middle East & Africa,Cairo Plant,704,20992446.14,1678394.75,8630920.61,4561272.28,1867243.48,0.188,2030,United Arab Emirates
+P-2030-816,Processing System Project 816,Quality Lab Upgrade,Middle East & Africa,Cairo Plant,794,38388885.18,3054716.42,15586618.4,8200691.69,4007506.17,0.166,2030,United Arab Emirates
+P-2030-817,Quality Lab Upgrade Project 817,Quality Lab Upgrade,Middle East & Africa,Cairo Plant,320,48196067.4,7115647.83,18471925.95,8848636.66,3461360.43,0.198,2030,United Arab Emirates
+P-2030-818,Processing System Project 818,Quality Lab Upgrade,Middle East & Africa,Riyadh Plant,231,42751308.11,5964151.47,15730125.5,8503452.42,3482912.73,0.2,2030,United Arab Emirates
+P-2030-819,Utilities Upgrade Project 819,Utilities Upgrade,Middle East & Africa,Dubai Plant,531,28091231.85,4112542.45,13971680.99,3775830.43,2449689.3,0.084,2030,United Arab Emirates
+P-2030-820,Utilities Upgrade Project 820,Utilities Upgrade,Middle East & Africa,Cairo Plant,667,17264735.99,1685055.41,8236550.24,2678748.05,1431826.03,0.175,2030,United Arab Emirates
+P-2030-821,Warehouse Automation Project 821,Warehouse Automation,Middle East & Africa,Dubai Plant,100,112333263.82,18581477.24,53898328.13,14105747.35,8661156.52,0.086,2030,United Arab Emirates
+P-2030-822,Warehouse Automation Project 822,Warehouse Automation,Middle East & Africa,Riyadh Plant,429,60099179.13,9690412.08,19285708.27,13758143.78,7099637.86,0.127,2030,United Arab Emirates
+P-2030-823,Warehouse Automation Project 823,Warehouse Automation,Middle East & Africa,Dubai Plant,682,12119539.63,1129266.72,5552778.96,1942518.86,928313.93,0.168,2030,United Arab Emirates
+P-2030-824,Mixing & Blending Project 824,Mixing & Blending,Europe,Modena Plant,138,144262237.83,13231734.87,67351261.31,26160194.94,12852848.91,0.125,2030,United Kingdom
+P-2030-825,Utilities Upgrade Project 825,Mixing & Blending,Europe,Le Havre Plant,113,87279382.97,6967450.13,42453216.36,14602754.57,8522298.3,0.124,2030,United Kingdom
+P-2030-826,Plant Expansion Project 826,Mixing & Blending,Europe,Le Havre Plant,320,130928521.57,22870913.41,51566045.53,21192788.14,13994245.85,0.104,2030,United Kingdom
+P-2030-827,Packaging Line Project 827,Packaging Line,Europe,Warsaw Plant,518,11250069.22,952124.68,5214044.69,1738257.08,983329.94,0.2,2030,United Kingdom
+P-2030-828,Plant Expansion Project 828,Plant Expansion,Europe,Modena Plant,918,127084705.71,20537534.31,50006621.43,25401740.52,16502659.68,0.05,2030,United Kingdom
+P-2030-829,Filling Line Project 829,Plant Expansion,Europe,Modena Plant,487,27262558.4,4005616.74,11853954.26,4414747.99,2264746.3,0.107,2030,United Kingdom
+P-2030-830,Plant Expansion Project 830,Utilities Upgrade,Europe,Warsaw Plant,616,70642013.76,9878267.98,28570724.96,14675691.15,7862884.17,0.081,2030,United Kingdom
+P-2030-831,Utilities Upgrade Project 831,Utilities Upgrade,Europe,Manchester Plant,114,80738563.51,15302854.1,34285687.76,11442477.19,6758754.74,0.091,2030,United Kingdom
+P-2030-832,Mixing & Blending Project 832,Utilities Upgrade,Europe,Modena Plant,101,103298418.06,16905611.66,53868562.14,12673234.16,7871797.79,0.08,2030,United Kingdom
+P-2030-833,Mixing & Blending Project 833,Utilities Upgrade,Europe,Warsaw Plant,606,67125591.33,10997385.91,25050176.17,15413000.92,8472427.36,0.05,2030,United Kingdom
+P-2030-834,Processing System Project 834,Warehouse Automation,Europe,Modena Plant,934,32984049.98,4338640.54,14156117.91,7702967.31,1677651.78,0.096,2030,United Kingdom
+P-2030-835,Warehouse Automation Project 835,Warehouse Automation,Europe,Le Havre Plant,483,55787089.44,9998807.27,25825483.18,7556689.7,5643344.28,0.073,2030,United Kingdom
+P-2030-836,Processing System Project 836,Warehouse Automation,Europe,Warsaw Plant,267,98894392.36,13812197.92,40667763.16,18812852.63,9888054.0,0.095,2030,United Kingdom
+P-2030-837,Warehouse Automation Project 837,Warehouse Automation,Europe,Modena Plant,394,82694335.62,10357714.72,38379737.59,15938739.79,8241389.71,0.062,2030,United Kingdom
+P-2030-838,Filling Line Project 838,Filling Line,North America,Ohio Plant,100,105351057.19,9693941.25,53915907.95,15233948.22,7246529.18,0.095,2030,United States
+P-2030-839,Quality Lab Upgrade Project 839,Quality Lab Upgrade,North America,Ontario Plant,1234,172366485.41,19184738.57,87821212.71,18757758.21,17346074.08,0.117,2030,United States
+P-2030-840,Quality Lab Upgrade Project 840,Quality Lab Upgrade,North America,Ohio Plant,685,12263813.96,893961.49,4944221.84,2667510.34,1161776.95,0.18,2030,United States
+P-2030-841,Mixing & Blending Project 841,Quality Lab Upgrade,North America,Iowa Plant,1288,332252671.02,36735410.95,170331897.69,39787466.83,37768267.97,0.099,2030,United States
+P-2030-842,Plant Expansion Project 842,Utilities Upgrade,North America,Ontario Plant,942,88761847.0,11645645.59,41323289.34,17284032.85,6833106.75,0.083,2030,United States
+P-2030-843,Utilities Upgrade Project 843,Utilities Upgrade,North America,Ohio Plant,911,64328110.01,8237441.9,30438717.77,11990544.52,5079576.39,0.074,2030,United States
+P-2030-844,Utilities Upgrade Project 844,Utilities Upgrade,North America,Iowa Plant,929,54051622.72,5981321.94,24939726.33,10569093.55,4506364.46,0.107,2030,United States
+P-2030-845,Utilities Upgrade Project 845,Utilities Upgrade,North America,Ontario Plant,1148,46468762.02,5220591.57,21494049.14,6966458.05,4011715.86,0.15,2030,United States
+P-2030-846,Processing System Project 846,Warehouse Automation,North America,Iowa Plant,987,63379315.02,5515080.21,29714811.05,13406329.92,4270319.64,0.105,2030,United States
+P-2030-847,Warehouse Automation Project 847,Warehouse Automation,North America,Iowa Plant,100,132506721.59,12338653.16,59669510.16,20672791.18,12458079.21,0.18,2030,United States
+P-2030-848,Packaging Line Project 848,Warehouse Automation,North America,Ontario Plant,795,52984300.12,4872861.02,24636523.64,11613298.0,4358811.67,0.095,2030,United States
+P-2030-849,Processing System Project 849,Warehouse Automation,North America,Iowa Plant,100,128673347.39,15794136.72,57071881.45,16985580.44,13366098.92,0.157,2030,United States

@@ -51,6 +51,12 @@ TYPE_COST_MULTIPLIER = {
     "Quality Lab Upgrade": 0.70,
 }
 
+COUNTRY_TO_REGION = {
+    country: region
+    for region, countries in REGION_TO_COUNTRIES.items()
+    for country in countries
+}
+
 
 @dataclass
 class GenConfig:
@@ -60,6 +66,7 @@ class GenConfig:
     rows_per_year: int
     seed: int
     ensure_catalog_rows: int
+    ensure_country_rows: int
 
 
 def parse_args() -> GenConfig:
@@ -75,6 +82,12 @@ def parse_args() -> GenConfig:
         default=4,
         help="Minimum rows to ensure for each (region, project_type) combination in generated years.",
     )
+    parser.add_argument(
+        "--ensure-country-rows",
+        type=int,
+        default=0,
+        help="Minimum rows to ensure for each existing (country, project_type) combination across full output.",
+    )
     args = parser.parse_args()
     return GenConfig(
         input_csv=args.input,
@@ -83,6 +96,7 @@ def parse_args() -> GenConfig:
         rows_per_year=args.rows_per_year,
         seed=args.seed,
         ensure_catalog_rows=args.ensure_catalog_rows,
+        ensure_country_rows=args.ensure_country_rows,
     )
 
 
@@ -222,6 +236,86 @@ def _ensure_catalog_coverage(
     return rows
 
 
+def _choose_template_for_country_type(
+    template_pool: pd.DataFrame,
+    region: str,
+    project_type: str,
+    rng: np.random.Generator,
+) -> pd.Series:
+    same_both = template_pool[
+        (template_pool["region"] == region) & (template_pool["project_type"] == project_type)
+    ]
+    if not same_both.empty:
+        return _sample_template(same_both, rng)
+
+    same_type = template_pool[template_pool["project_type"] == project_type]
+    if not same_type.empty:
+        return _sample_template(same_type, rng)
+
+    same_region = template_pool[template_pool["region"] == region]
+    if not same_region.empty:
+        return _sample_template(same_region, rng)
+
+    return _sample_template(template_pool, rng)
+
+
+def _ensure_country_type_coverage(
+    base_df: pd.DataFrame,
+    generated_rows: list,
+    template_pool: pd.DataFrame,
+    years: list,
+    serial_start: int,
+    min_rows_per_combo: int,
+    rng: np.random.Generator,
+) -> list:
+    if min_rows_per_combo <= 0:
+        return list(generated_rows)
+
+    rows = list(generated_rows)
+    serial = serial_start
+    generated_df = pd.DataFrame(rows) if rows else pd.DataFrame(columns=["country", "project_type"])
+
+    base_counts = (
+        base_df.groupby(["country", "project_type"], dropna=False)
+        .size()
+        .rename("n")
+        .reset_index()
+    )
+
+    for _, combo in base_counts.iterrows():
+        country = str(combo["country"])
+        project_type = str(combo["project_type"])
+        region = COUNTRY_TO_REGION.get(country)
+        if region is None:
+            continue
+
+        existing_n = int(combo["n"])
+        generated_n = 0
+        if not generated_df.empty:
+            generated_n = int(
+                ((generated_df["country"] == country) & (generated_df["project_type"] == project_type)).sum()
+            )
+        needed = max(0, min_rows_per_combo - (existing_n + generated_n))
+
+        for _ in range(needed):
+            template = _choose_template_for_country_type(
+                template_pool=template_pool,
+                region=region,
+                project_type=project_type,
+                rng=rng,
+            )
+            year = int(rng.choice(years))
+            row = _make_row(template, year=year, serial=serial, rng=rng)
+            row["region"] = region
+            row["project_type"] = project_type
+            row["country"] = country
+            row["site"] = str(rng.choice(REGION_TO_SITES[region]))
+            rows.append(row)
+            serial += 1
+
+    return rows
+
+
 def main() -> None:
     cfg = parse_args()
     rng = np.random.default_rng(cfg.seed)
@@ -237,7 +331,7 @@ def main() -> None:
             )
 
     max_year = int(df["execution_year"].max())
-    if cfg.end_year <= max_year:
+    if cfg.end_year <= max_year and cfg.ensure_country_rows <= 0:
         df.to_csv(cfg.output_csv, index=False)
         print("Backfilled country column where needed.")
         print(f"No generation needed. Dataset already reaches {max_year}.")
@@ -265,6 +359,19 @@ def main() -> None:
             years=generated_years,
             serial_start=serial,
             min_rows_per_combo=cfg.ensure_catalog_rows,
+            rng=rng,
+        )
+
+    coverage_years = generated_years if generated_years else [max_year]
+    if cfg.ensure_country_rows > 0:
+        serial_for_country = _next_serial(pd.concat([df, pd.DataFrame(new_rows)], ignore_index=True))
+        new_rows = _ensure_country_type_coverage(
+            base_df=df,
+            generated_rows=new_rows,
+            template_pool=template_pool,
+            years=coverage_years,
+            serial_start=serial_for_country,
+            min_rows_per_combo=cfg.ensure_country_rows,
             rng=rng,
         )
 
