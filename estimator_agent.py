@@ -1,7 +1,8 @@
 import json
 from typing import Dict, Any, List
-from openai import OpenAI
-from config import OPENAI_API_KEY, OPENAI_MODEL, REGIONAL_INDEX
+# from openai import OpenAI  # Demo: disabled for deterministic mode.
+from config import REGIONAL_INDEX
+# from config import OPENAI_API_KEY, OPENAI_MODEL  # Demo: disabled for deterministic mode.
 from scaler import infer_inflation_factor
 
 # See: Structured Outputs & Responses API. The model will adhere to this JSON schema.
@@ -110,7 +111,9 @@ TOOLS = [
 
 class EstimatorAgent:
     def __init__(self):
-        self.client = OpenAI(api_key=OPENAI_API_KEY) if OPENAI_API_KEY else None
+        # Demo mode: keep estimator deterministic by disabling OpenAI client.
+        # self.client = OpenAI(api_key=OPENAI_API_KEY) if OPENAI_API_KEY else None
+        self.client = None
 
     def _format_projects(self, df):
         # minimal fields to reason about factors
