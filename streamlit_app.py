@@ -8,7 +8,10 @@ from estimator_agent import EstimatorAgent
 from scaler import apply_cost_scaling
 from reviewer import review
 from report_writer import write_summary
-from config import REGIONAL_INDEX, REGION_COUNTRIES, OPENAI_API_KEY
+from config import REGIONAL_INDEX, REGION_COUNTRIES
+
+# Demo mode: AI link disabled to force deterministic fallback.
+OPENAI_API_KEY = None
 
 
 # ---------- UI CONFIG ----------
